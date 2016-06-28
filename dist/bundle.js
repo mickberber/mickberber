@@ -79,11 +79,11 @@
 
 	var _projects2 = _interopRequireDefault(_projects);
 
-	var _about = __webpack_require__(464);
+	var _about = __webpack_require__(465);
 
 	var _about2 = _interopRequireDefault(_about);
 
-	var _contact = __webpack_require__(465);
+	var _contact = __webpack_require__(466);
 
 	var _contact2 = _interopRequireDefault(_contact);
 
@@ -27292,6 +27292,10 @@
 
 	var _mcTestingWall2 = _interopRequireDefault(_mcTestingWall);
 
+	var _reChatWall = __webpack_require__(464);
+
+	var _reChatWall2 = _interopRequireDefault(_reChatWall);
+
 	var _nav = __webpack_require__(250);
 
 	var _nav2 = _interopRequireDefault(_nav);
@@ -27323,6 +27327,7 @@
 	        _react2.default.createElement(_gilsonWall2.default, { background: 'gilsonBackground', wall: 'gilsonStructure' }),
 	        _react2.default.createElement(_mcTestingWall2.default, { background: 'mcTestingBackground', wall: 'mcTestingStructure' }),
 	        _react2.default.createElement(_tinnrWall2.default, { background: 'tinnrBackground', wall: 'tinnrStructure' }),
+	        _react2.default.createElement(_reChatWall2.default, { background: 'reChatBackground', wall: 'reChatStructure' }),
 	        _react2.default.createElement(_chutteWall2.default, { background: 'chutteBackground', wall: 'chutteStructure' }),
 	        _react2.default.createElement(_socialWall2.default, { background: 'socialBackground', wall: 'socialStructure' }),
 	        _react2.default.createElement(_wall2.default, { background: 'logoBackground', wall: 'logoStructure' })
@@ -40924,6 +40929,69 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _classnames = __webpack_require__(248);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var ReChatWall = function (_Component) {
+	  _inherits(ReChatWall, _Component);
+
+	  function ReChatWall(props) {
+	    _classCallCheck(this, ReChatWall);
+
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ReChatWall).call(this, props));
+
+	    _this.props = props;
+	    return _this;
+	  }
+
+	  _createClass(ReChatWall, [{
+	    key: 'render',
+	    value: function render() {
+	      var classesWall = (0, _classnames2.default)(this.props.wall, this.props.background);
+	      return _react2.default.createElement(
+	        'div',
+	        { className: classesWall },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'row' },
+	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
+	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
+	          _react2.default.createElement('div', { className: 'col-xs-12 col-md-8' })
+	        )
+	      );
+	    }
+	  }]);
+
+	  return ReChatWall;
+	}(_react.Component);
+
+	exports.default = ReChatWall;
+
+/***/ },
+/* 465 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
 	var _nav = __webpack_require__(250);
 
 	var _nav2 = _interopRequireDefault(_nav);
@@ -40970,7 +41038,7 @@
 	exports.default = About;
 
 /***/ },
-/* 465 */
+/* 466 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';

@@ -171,6 +171,22 @@
   background-size: cover;
 }
 
+/* ReChat Wall Attributes */
+
+.reChatStructure {
+  position: relative;
+	height: 800px;
+	width: 100%;
+	z-index: 1;
+}
+
+.reChatBackground {
+	background: url('./../src/assets/wallAssets/rechat.png');
+	background-attachment: scroll;
+	background-position: center;
+  background-size: cover;
+}
+
 /* Twitter style */
 .centerTwit {
   width: 80%;
