@@ -13,8 +13,8 @@ export default class About extends Component {
           <div style={{marginLeft:'25px'}}>I have a really cool dog</div>
           <div style={{marginRight: '25px', float:'right'}}>And I cook a little bit...</div>
         </div>
-        <img style={{height: '500px', width: '50%', padding: '20px'}} src='./../../assets/IMG_0925.jpg'/>
-        <img style={{height: '500px', width: '50%', padding: '20px', float: 'right'}} src='./../../assets/food.jpg'/>
+        <img style={{height: '500px', width: '50%', padding: '20px'}} src='./../../assets/IMG_0925.JPG'/>
+        <img style={{height: '500px', width: '50%', padding: '20px', float: 'right'}} src='./../../assets/food.JPG'/>
         <div style={{height: '100px'}}/>
         <div className='row'>
           <div style={{marginLeft:'25px'}}>I'm a red</div>

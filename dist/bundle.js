@@ -41041,8 +41041,8 @@
 	            'And I cook a little bit...'
 	          )
 	        ),
-	        _react2.default.createElement('img', { style: { height: '500px', width: '50%', padding: '20px' }, src: './../../assets/IMG_0925.jpg' }),
-	        _react2.default.createElement('img', { style: { height: '500px', width: '50%', padding: '20px', float: 'right' }, src: './../../assets/food.jpg' }),
+	        _react2.default.createElement('img', { style: { height: '500px', width: '50%', padding: '20px' }, src: './../../assets/IMG_0925.JPG' }),
+	        _react2.default.createElement('img', { style: { height: '500px', width: '50%', padding: '20px', float: 'right' }, src: './../../assets/food.JPG' }),
 	        _react2.default.createElement('div', { style: { height: '100px' } }),
 	        _react2.default.createElement(
 	          'div',
