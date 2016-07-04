@@ -41041,8 +41041,8 @@
 	            'And I cook a little bit...'
 	          )
 	        ),
-	        _react2.default.createElement('img', { style: { height: '500px', width: '50%', padding: '20px' }, src: './../../assets/IMG_0925.JPG' }),
-	        _react2.default.createElement('img', { style: { height: '500px', width: '50%', padding: '20px', float: 'right' }, src: './../../assets/food.JPG' }),
+	        _react2.default.createElement('img', { style: { height: '500px', width: '50%', padding: '20px' }, src: './../../assets/IMG_0925.jpg' }),
+	        _react2.default.createElement('img', { style: { height: '500px', width: '50%', padding: '20px', float: 'right' }, src: './../../assets/food.jpg' }),
 	        _react2.default.createElement('div', { style: { height: '100px' } }),
 	        _react2.default.createElement(
 	          'div',
@@ -41059,7 +41059,7 @@
 	          )
 	        ),
 	        _react2.default.createElement('img', { style: { height: '500px', width: '50%', padding: '20px' }, src: './../../assets/lfc.jpg' }),
-	        _react2.default.createElement('img', { style: { height: '500px', width: '50%', padding: '20px', float: 'right' }, src: './../../assets/lfc2.JPG' }),
+	        _react2.default.createElement('img', { style: { height: '500px', width: '50%', padding: '20px', float: 'right' }, src: './../../assets/lfc2.jpg' }),
 	        _react2.default.createElement('div', { style: { height: '100px' } }),
 	        _react2.default.createElement(
 	          'div',
@@ -41075,8 +41075,8 @@
 	            'I\'m green and gold'
 	          )
 	        ),
-	        _react2.default.createElement('img', { style: { height: '500px', width: '50%', padding: '20px' }, src: './../../assets/HENDERSON.JPG' }),
-	        _react2.default.createElement('img', { style: { height: '500px', width: '50%', padding: '20px', float: 'right' }, src: './../../assets/oak.JPG' }),
+	        _react2.default.createElement('img', { style: { height: '500px', width: '50%', padding: '20px' }, src: './../../assets/HENDERSON.jpg' }),
+	        _react2.default.createElement('img', { style: { height: '500px', width: '50%', padding: '20px', float: 'right' }, src: './../../assets/oak.jpg' }),
 	        _react2.default.createElement('div', { style: { height: '100px' } }),
 	        _react2.default.createElement(
 	          'div',
@@ -41092,8 +41092,8 @@
 	            'Mmmm... a comeback'
 	          )
 	        ),
-	        _react2.default.createElement('img', { style: { height: '500px', width: '50%', padding: '20px' }, src: './../../assets/avaya.JPG' }),
-	        _react2.default.createElement('img', { style: { height: '500px', width: '50%', padding: '20px', float: 'right' }, src: './../../assets/gordon.JPG' }),
+	        _react2.default.createElement('img', { style: { height: '500px', width: '50%', padding: '20px' }, src: './../../assets/avaya.jpg' }),
+	        _react2.default.createElement('img', { style: { height: '500px', width: '50%', padding: '20px', float: 'right' }, src: './../../assets/gordon.jpg' }),
 	        _react2.default.createElement('div', { style: { height: '100px' } }),
 	        _react2.default.createElement(
 	          'div',
@@ -41104,8 +41104,8 @@
 	            'And I take some decent photos'
 	          )
 	        ),
-	        _react2.default.createElement('img', { style: { height: '500px', width: '50%', padding: '20px' }, src: './../../assets/palace.JPG' }),
-	        _react2.default.createElement('img', { style: { height: '500px', width: '50%', padding: '20px', float: 'right' }, src: './../../assets/sf.JPG' })
+	        _react2.default.createElement('img', { style: { height: '500px', width: '50%', padding: '20px' }, src: './../../assets/palace.jpg' }),
+	        _react2.default.createElement('img', { style: { height: '500px', width: '50%', padding: '20px', float: 'right' }, src: './../../assets/sf.jpg' })
 	      );
 	    }
 	  }]);
