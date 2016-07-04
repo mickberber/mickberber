@@ -27325,9 +27325,9 @@
 	        null,
 	        _react2.default.createElement(_nav2.default, null),
 	        _react2.default.createElement(_gilsonWall2.default, { background: 'gilsonBackground', wall: 'gilsonStructure' }),
-	        _react2.default.createElement(_mcTestingWall2.default, { background: 'mcTestingBackground', wall: 'mcTestingStructure' }),
-	        _react2.default.createElement(_tinnrWall2.default, { background: 'tinnrBackground', wall: 'tinnrStructure' }),
 	        _react2.default.createElement(_reChatWall2.default, { background: 'reChatBackground', wall: 'reChatStructure' }),
+	        _react2.default.createElement(_tinnrWall2.default, { background: 'tinnrBackground', wall: 'tinnrStructure' }),
+	        _react2.default.createElement(_mcTestingWall2.default, { background: 'mcTestingBackground', wall: 'mcTestingStructure' }),
 	        _react2.default.createElement(_chutteWall2.default, { background: 'chutteBackground', wall: 'chutteStructure' }),
 	        _react2.default.createElement(_socialWall2.default, { background: 'socialBackground', wall: 'socialStructure' }),
 	        _react2.default.createElement(_wall2.default, { background: 'logoBackground', wall: 'logoStructure' })
@@ -40885,21 +40885,6 @@
 	                'h3',
 	                null,
 	                'npm install mc-testing'
-	              ),
-	              _react2.default.createElement(
-	                'h4',
-	                null,
-	                'Simple test suite'
-	              ),
-	              _react2.default.createElement(
-	                'h4',
-	                null,
-	                'I wanted to make my own,'
-	              ),
-	              _react2.default.createElement(
-	                'h4',
-	                null,
-	                'to get a better handle on testing.'
 	              )
 	            )
 	          )
@@ -40963,7 +40948,17 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'row' },
-	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
+	          _react2.default.createElement(
+	            'div',
+	            { style: { fontSize: '25px' }, className: 'col-xs-3 col-md-2 dropTopLrg' },
+	            'Tutorial written for React, Horizon and Webpack',
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://medium.com/front-end-hacking/react-webpack-and-horizon-quick-start-b9335c1ece53#.vawif2uba' },
+	              '\n',
+	              'Viewable Here'
+	            )
+	          ),
 	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
 	          _react2.default.createElement('div', { className: 'col-xs-12 col-md-8' })
 	        )
@@ -41026,8 +41021,7 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(_nav2.default, { textColor: 'black' }),
-	        _react2.default.createElement('img', { src: './../../assets/IMG_0925.JPG' }),
-	        'Zlatan, the dog(my dog).'
+	        _react2.default.createElement('img', { src: './../../assets/IMG_0925.JPG' })
 	      );
 	    }
 	  }]);

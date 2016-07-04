@@ -21,9 +21,6 @@ class McTestingWall extends Component {
                     </a>
                   </h3>
                   <h3>npm install mc-testing</h3>
-                  <h4>Simple test suite</h4>
-                  <h4>I wanted to make my own,</h4>
-                  <h4>to get a better handle on testing.</h4>
                 </div>
             </div>
           </div>

@@ -14,9 +14,9 @@ class Projects extends Component {
       <div>
         <Nav />
         <GilsonWall background='gilsonBackground' wall='gilsonStructure' />
-        <McTestingWall background='mcTestingBackground' wall='mcTestingStructure' />
-        <TinnrWall background='tinnrBackground' wall='tinnrStructure' />
         <ReChatWall background='reChatBackground' wall='reChatStructure'/>
+        <TinnrWall background='tinnrBackground' wall='tinnrStructure' />
+        <McTestingWall background='mcTestingBackground' wall='mcTestingStructure' />
         <ChutteWall background='chutteBackground' wall='chutteStructure' />
         <SocialWall background='socialBackground' wall='socialStructure' />
         <LogoWall background='logoBackground' wall='logoStructure' />
