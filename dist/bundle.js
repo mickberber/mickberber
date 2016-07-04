@@ -40950,16 +40950,21 @@
 	          { className: 'row' },
 	          _react2.default.createElement(
 	            'div',
-	            { style: { fontSize: '25px' }, className: 'col-xs-3 col-md-2 dropTopLrg' },
-	            'Tutorial written for React, Horizon and Webpack',
+	            { className: 'col-xs-4 col-md-3 dropTopLrg' },
 	            _react2.default.createElement(
-	              'a',
-	              { href: 'https://medium.com/front-end-hacking/react-webpack-and-horizon-quick-start-b9335c1ece53#.vawif2uba' },
-	              '\n',
-	              'Viewable Here'
-	            )
+	              'div',
+	              { style: { fontSize: '25px', marginLeft: '40px' } },
+	              'Tutorial written for React, Horizon and Webpack',
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'https://medium.com/front-end-hacking/react-webpack-and-horizon-quick-start-b9335c1ece53#.vawif2uba' },
+	                '\n',
+	                'Viewable Here'
+	              )
+	            ),
+	            _react2.default.createElement('img', { style: { width: '300px', height: '100px' }, src: './src/assets/horizon.png' })
 	          ),
-	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
+	          _react2.default.createElement('div', { className: 'col-xs-2 col-md-1' }),
 	          _react2.default.createElement('div', { className: 'col-xs-12 col-md-8' })
 	        )
 	      );
