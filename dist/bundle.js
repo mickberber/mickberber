@@ -41032,7 +41032,7 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(_nav2.default, { textColor: 'black' }),
-	        _react2.default.createElement('img', { style: bgStyle, src: picLocation + 'avaya.JPG' }),
+	        _react2.default.createElement('img', { style: bgStyle, src: picLocation + 'avaya.jpg' }),
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'container' },
@@ -41045,40 +41045,40 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'row' },
-	            _react2.default.createElement('img', { style: _extends({}, picDefault, { height: '500px', width: '80%' }), src: picLocation + 'goofkick.JPG' })
+	            _react2.default.createElement('img', { style: _extends({}, picDefault, { height: '500px', width: '80%' }), src: picLocation + 'goofkick.jpg' })
 	          ),
 	          _react2.default.createElement('div', { style: { height: '50px' } }),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'row' },
-	            _react2.default.createElement('img', { style: _extends({}, picDefault, { height: '500px', width: '75%', float: 'right' }), src: picLocation + 'oak.JPG' })
+	            _react2.default.createElement('img', { style: _extends({}, picDefault, { height: '500px', width: '75%', float: 'right' }), src: picLocation + 'oak.jpg' })
 	          ),
 	          _react2.default.createElement('div', { style: { height: '50px' } }),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'row' },
-	            _react2.default.createElement('img', { style: _extends({}, picDefault, { height: '600px' }), src: picLocation + 'sf.JPG' }),
-	            _react2.default.createElement('img', { style: _extends({}, picDefault, { width: '55%' }), src: picLocation + 'zlats.JPG' })
+	            _react2.default.createElement('img', { style: _extends({}, picDefault, { height: '600px' }), src: picLocation + 'sf.jpg' }),
+	            _react2.default.createElement('img', { style: _extends({}, picDefault, { width: '55%' }), src: picLocation + 'zlats.jpg' })
 	          ),
 	          _react2.default.createElement('div', { style: { height: '50px' } }),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'row' },
-	            _react2.default.createElement('img', { style: _extends({}, picDefault, { width: '75%', height: '500px' }), src: picLocation + 'kezar.JPG' })
+	            _react2.default.createElement('img', { style: _extends({}, picDefault, { width: '75%', height: '500px' }), src: picLocation + 'kezar.jpg' })
 	          ),
 	          _react2.default.createElement('div', { style: { height: '50px' } }),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'row' },
-	            _react2.default.createElement('img', { style: picDefault, src: picLocation + 'palace.JPG' }),
-	            _react2.default.createElement('img', { style: _extends({}, picDefault, { width: '55%', float: 'right' }), src: picLocation + 'menbob.JPG' })
+	            _react2.default.createElement('img', { style: picDefault, src: picLocation + 'palace.jpg' }),
+	            _react2.default.createElement('img', { style: _extends({}, picDefault, { width: '55%', float: 'right' }), src: picLocation + 'menbob.jpg' })
 	          ),
 	          _react2.default.createElement('div', { style: { height: '50px' } }),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'row' },
-	            _react2.default.createElement('img', { style: _extends({}, picDefault, { width: '50%' }), src: picLocation + 'gordon.JPG' }),
-	            _react2.default.createElement('img', { style: _extends({}, picDefault, { height: '600px', float: 'right' }), src: picLocation + 'HENDERSON.JPG' })
+	            _react2.default.createElement('img', { style: _extends({}, picDefault, { width: '50%' }), src: picLocation + 'gordon.jpg' }),
+	            _react2.default.createElement('img', { style: _extends({}, picDefault, { height: '600px', float: 'right' }), src: picLocation + 'HENDERSON.jpg' })
 	          )
 	        )
 	      );
