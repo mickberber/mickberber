@@ -40986,6 +40986,8 @@
 	  value: true
 	});
 
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _react = __webpack_require__(2);
@@ -41010,6 +41012,10 @@
 	//import NavBar from './../navBar';
 
 
+	var bgStyle = { height: '100%', width: '100%', objectFit: 'fill', zIndex: '-100', position: 'fixed', opacity: '0.1' };
+	var picDefault = { height: '400px', width: '40%', padding: '20px', margin: '10px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', backgroundColor: 'white' };
+	var picLocation = './../../assets/gallerypics/';
+
 	var About = function (_Component) {
 	  _inherits(About, _Component);
 
@@ -41026,39 +41032,53 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(_nav2.default, { textColor: 'black' }),
-	        _react2.default.createElement('img', { style: { height: '100%', width: '100%', objectFit: 'fill', zIndex: '-100', position: 'fixed', opacity: '0.1' }, src: './../../assets/avaya.jpg' }),
+	        _react2.default.createElement('img', { style: bgStyle, src: picLocation + 'avaya.JPG' }),
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'container' },
 	          _react2.default.createElement('div', { style: { height: '125px' } }),
 	          _react2.default.createElement(
 	            'div',
-	            null,
-	            'About me... in pictures'
+	            { style: { fontSize: '300%', textAlign: 'center', fontFamily: 'Gerogia' } },
+	            'Me... in pictures'
 	          ),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'row' },
-	            _react2.default.createElement('img', { style: { height: '400px', width: '60%', padding: '20px', margin: '10px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', backgroundColor: 'white', float: 'right' }, src: './../../assets/cable.JPG' })
-	          ),
-	          _react2.default.createElement('div', { style: { height: '50px' } }),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'row' },
-	            _react2.default.createElement('img', { style: { height: '400px', width: '60%', padding: '20px', margin: '10px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', backgroundColor: 'white' }, src: './../../assets/lfc.JPG' })
+	            _react2.default.createElement('img', { style: _extends({}, picDefault, { height: '500px', width: '80%' }), src: picLocation + 'goofkick.JPG' })
 	          ),
 	          _react2.default.createElement('div', { style: { height: '50px' } }),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'row' },
-	            _react2.default.createElement('img', { style: { height: '400px', width: '40%', padding: '20px', margin: '10px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', backgroundColor: 'white' }, src: './../../assets/palace.JPG' }),
-	            _react2.default.createElement('img', { style: { height: '400px', width: '40%', padding: '20px', margin: '10px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', backgroundColor: 'white', float: 'right' }, src: './../../assets/food.JPG' })
+	            _react2.default.createElement('img', { style: _extends({}, picDefault, { height: '500px', width: '75%', float: 'right' }), src: picLocation + 'oak.JPG' })
 	          ),
 	          _react2.default.createElement('div', { style: { height: '50px' } }),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'row' },
-	            _react2.default.createElement('img', { style: { height: '600px', width: '40%', padding: '20px', margin: '10px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', backgroundColor: 'white' }, src: './../../assets/sf.JPG' })
+	            _react2.default.createElement('img', { style: _extends({}, picDefault, { height: '600px' }), src: picLocation + 'sf.JPG' }),
+	            _react2.default.createElement('img', { style: _extends({}, picDefault, { width: '55%' }), src: picLocation + 'zlats.JPG' })
+	          ),
+	          _react2.default.createElement('div', { style: { height: '50px' } }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'row' },
+	            _react2.default.createElement('img', { style: _extends({}, picDefault, { width: '75%', height: '500px' }), src: picLocation + 'kezar.JPG' })
+	          ),
+	          _react2.default.createElement('div', { style: { height: '50px' } }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'row' },
+	            _react2.default.createElement('img', { style: picDefault, src: picLocation + 'palace.JPG' }),
+	            _react2.default.createElement('img', { style: _extends({}, picDefault, { width: '55%', float: 'right' }), src: picLocation + 'menbob.JPG' })
+	          ),
+	          _react2.default.createElement('div', { style: { height: '50px' } }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'row' },
+	            _react2.default.createElement('img', { style: _extends({}, picDefault, { width: '50%' }), src: picLocation + 'gordon.JPG' }),
+	            _react2.default.createElement('img', { style: _extends({}, picDefault, { height: '600px', float: 'right' }), src: picLocation + 'HENDERSON.JPG' })
 	          )
 	        )
 	      );
