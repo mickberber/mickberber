@@ -27161,8 +27161,8 @@
 	                  _react2.default.createElement(
 	                    'div',
 	                    { style: { color: this.textColor } },
-	                    _react2.default.createElement('i', { className: 'fa fa-smile-o', 'aria-hidden': 'true' }),
-	                    ' about me'
+	                    _react2.default.createElement('i', { className: 'fa fa-camera-retro', 'aria-hidden': 'true' }),
+	                    ' gallery'
 	                  )
 	                )
 	              ),
@@ -41026,37 +41026,39 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(_nav2.default, { textColor: 'black' }),
+	        _react2.default.createElement('img', { style: { height: '100%', width: '100%', objectFit: 'fill', zIndex: '-100', position: 'fixed', opacity: '0.1' }, src: './../../assets/avaya.jpg' }),
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'container' },
-	          _react2.default.createElement('div', { style: { height: '150px' } }),
+	          _react2.default.createElement('div', { style: { height: '125px' } }),
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            'About me... in pictures'
+	          ),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'row' },
-	            _react2.default.createElement(
-	              'div',
-	              { style: { fontSize: '200%' } },
-	              'About Me:'
-	            ),
-	            _react2.default.createElement('img', { style: { height: '400px', width: '40%', padding: '20px', margin: '10px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', float: 'right' }, src: './../../assets/avaya.jpg' })
+	            _react2.default.createElement('img', { style: { height: '400px', width: '60%', padding: '20px', margin: '10px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', backgroundColor: 'white', float: 'right' }, src: './../../assets/cable.JPG' })
 	          ),
 	          _react2.default.createElement('div', { style: { height: '50px' } }),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'row' },
-	            _react2.default.createElement('img', { style: { height: '400px', width: '40%', padding: '20px', margin: '10px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' }, src: './../../assets/lfc.JPG' })
+	            _react2.default.createElement('img', { style: { height: '400px', width: '60%', padding: '20px', margin: '10px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', backgroundColor: 'white' }, src: './../../assets/lfc.JPG' })
 	          ),
 	          _react2.default.createElement('div', { style: { height: '50px' } }),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'row' },
-	            _react2.default.createElement('img', { style: { height: '400px', width: '40%', padding: '20px', margin: '10px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', float: 'right' }, src: './../../assets/food.JPG' })
+	            _react2.default.createElement('img', { style: { height: '400px', width: '40%', padding: '20px', margin: '10px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', backgroundColor: 'white' }, src: './../../assets/palace.JPG' }),
+	            _react2.default.createElement('img', { style: { height: '400px', width: '40%', padding: '20px', margin: '10px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', backgroundColor: 'white', float: 'right' }, src: './../../assets/food.JPG' })
 	          ),
 	          _react2.default.createElement('div', { style: { height: '50px' } }),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'row' },
-	            _react2.default.createElement('img', { style: { height: '400px', width: '40%', padding: '20px', margin: '10px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' }, src: './../../assets/sf.JPG' })
+	            _react2.default.createElement('img', { style: { height: '600px', width: '40%', padding: '20px', margin: '10px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', backgroundColor: 'white' }, src: './../../assets/sf.JPG' })
 	          )
 	        )
 	      );

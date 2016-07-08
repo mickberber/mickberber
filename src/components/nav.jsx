@@ -14,7 +14,7 @@ export default class Nav extends Component {
               <ul className="nav navbar-nav">
                 <li><a href='/'><div style={{color: this.textColor }}><i className="fa fa-home" aria-hidden="true"></i> home</div></a></li>
                 <li><Link to="contact"><div style={{color: this.textColor }}><i className="fa fa-envelope-o" aria-hidden="true"></i> contact</div></Link></li>
-                <li><Link to='about'><div style={{color: this.textColor }}><i className="fa fa-smile-o" aria-hidden="true"></i> about me</div></Link></li>
+                <li><Link to='about'><div style={{color: this.textColor }}><i className="fa fa-camera-retro" aria-hidden="true"></i> gallery</div></Link></li>
                 <li><Link to='projects'><div style={{color: this.textColor }}><i className="fa fa-code-fork" aria-hidden="true"></i> projects</div></Link></li>
               </ul>
               <ul className="nav navbar-nav navbar-right">
