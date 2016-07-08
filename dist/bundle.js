@@ -41033,25 +41033,30 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'row' },
+	            _react2.default.createElement(
+	              'div',
+	              { style: { fontSize: '200%' } },
+	              'About Me:'
+	            ),
+	            _react2.default.createElement('img', { style: { height: '400px', width: '40%', padding: '20px', margin: '10px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', float: 'right' }, src: './../../assets/avaya.jpg' })
+	          ),
+	          _react2.default.createElement('div', { style: { height: '50px' } }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'row' },
+	            _react2.default.createElement('img', { style: { height: '400px', width: '40%', padding: '20px', margin: '10px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' }, src: './../../assets/lfc.JPG' })
+	          ),
+	          _react2.default.createElement('div', { style: { height: '50px' } }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'row' },
 	            _react2.default.createElement('img', { style: { height: '400px', width: '40%', padding: '20px', margin: '10px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', float: 'right' }, src: './../../assets/food.JPG' })
 	          ),
 	          _react2.default.createElement('div', { style: { height: '50px' } }),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'row' },
-	            _react2.default.createElement('img', { style: { height: '400px', width: '40%', padding: '20px', margin: '10px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' }, src: './../../assets/food.JPG' })
-	          ),
-	          _react2.default.createElement('div', { style: { height: '50px' } }),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'row' },
-	            _react2.default.createElement('img', { style: { height: '400px', width: '40%', padding: '20px', margin: '10px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', float: 'right' }, src: './../../assets/food.JPG' })
-	          ),
-	          _react2.default.createElement('div', { style: { height: '50px' } }),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'row' },
-	            _react2.default.createElement('img', { style: { height: '400px', width: '40%', padding: '20px', margin: '10px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' }, src: './../../assets/food.JPG' })
+	            _react2.default.createElement('img', { style: { height: '400px', width: '40%', padding: '20px', margin: '10px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' }, src: './../../assets/sf.JPG' })
 	          )
 	        )
 	      );
