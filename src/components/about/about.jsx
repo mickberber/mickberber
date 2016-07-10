@@ -16,8 +16,11 @@ export default class About extends Component {
         <Nav textColor='black' />
         <img style={bgStyle} src={picLocation + 'avaya.jpg'}/>
         <div className='container'>
-          <div style={{height: '125px'}} />
-          <div style={{fontSize: '300%', textAlign: 'center', fontFamily: 'Gerogia'}}>Me... in pictures</div>
+          <div style={{height: '65px'}} />
+          <div style={{fontSize: '700%', textAlign: 'center', fontFamily: 'Gerogia'}}>
+            <i className="fa fa-hand-spock-o" aria-hidden="true"></i>
+          </div>
+          <div style={{height: '25px'}} />
           <div className='row'>
             <img style={{ ...picDefault, height: '500px', width: '80%'}} src={picLocation + 'goofkick.jpg'}/>
           </div>
@@ -27,8 +30,8 @@ export default class About extends Component {
           </div>
           <div style={{height: '50px'}} />
           <div className='row'>
-            <img style={{ ...picDefault, height: '600px'}} src={picLocation + 'sf.jpg'}/>
-            <img style={{ ...picDefault, width: '55%'}} src={picLocation +'zlats.jpg'}/>
+            <img style={{ ...picDefault, width: '45%', height: '600px'}} src={picLocation + 'zlatan.jpg'}/>
+            <img style={{ ...picDefault, width: '50%'}} src={picLocation +'zlats.jpg'}/>
           </div>
           <div style={{height: '50px'}} />
           <div className='row'>
@@ -38,6 +41,10 @@ export default class About extends Component {
           <div className='row'>
             <img style={picDefault} src={picLocation + 'palace.jpg'}/>
             <img style={{ ...picDefault, width: '55%', float: 'right'}} src={picLocation + 'menbob.jpg'}/>
+          </div>
+          <div style={{height: '50px'}} />
+          <div className='row'>
+            <img style={{ ...picDefault, width: '70%', marginLeft: '10%'}} src={picLocation + 'menmalek.jpg'}/>
           </div>
           <div style={{height: '50px'}} />
           <div className='row'>

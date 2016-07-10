@@ -41038,12 +41038,13 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'container' },
-	          _react2.default.createElement('div', { style: { height: '125px' } }),
+	          _react2.default.createElement('div', { style: { height: '65px' } }),
 	          _react2.default.createElement(
 	            'div',
-	            { style: { fontSize: '300%', textAlign: 'center', fontFamily: 'Gerogia' } },
-	            'Me... in pictures'
+	            { style: { fontSize: '700%', textAlign: 'center', fontFamily: 'Gerogia' } },
+	            _react2.default.createElement('i', { className: 'fa fa-hand-spock-o', 'aria-hidden': 'true' })
 	          ),
+	          _react2.default.createElement('div', { style: { height: '25px' } }),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'row' },
@@ -41059,8 +41060,8 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'row' },
-	            _react2.default.createElement('img', { style: _extends({}, picDefault, { height: '600px' }), src: picLocation + 'sf.jpg' }),
-	            _react2.default.createElement('img', { style: _extends({}, picDefault, { width: '55%' }), src: picLocation + 'zlats.jpg' })
+	            _react2.default.createElement('img', { style: _extends({}, picDefault, { width: '45%', height: '600px' }), src: picLocation + 'zlatan.jpg' }),
+	            _react2.default.createElement('img', { style: _extends({}, picDefault, { width: '50%' }), src: picLocation + 'zlats.jpg' })
 	          ),
 	          _react2.default.createElement('div', { style: { height: '50px' } }),
 	          _react2.default.createElement(
@@ -41074,6 +41075,12 @@
 	            { className: 'row' },
 	            _react2.default.createElement('img', { style: picDefault, src: picLocation + 'palace.jpg' }),
 	            _react2.default.createElement('img', { style: _extends({}, picDefault, { width: '55%', float: 'right' }), src: picLocation + 'menbob.jpg' })
+	          ),
+	          _react2.default.createElement('div', { style: { height: '50px' } }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'row' },
+	            _react2.default.createElement('img', { style: _extends({}, picDefault, { width: '70%', marginLeft: '10%' }), src: picLocation + 'menmalek.jpg' })
 	          ),
 	          _react2.default.createElement('div', { style: { height: '50px' } }),
 	          _react2.default.createElement(
