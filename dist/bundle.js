@@ -41013,7 +41013,9 @@
 
 
 	var bgStyle = { height: '100%', width: '100%', objectFit: 'fill', zIndex: '-100', position: 'fixed', opacity: '0.1' };
+
 	var picDefault = { height: '400px', width: '40%', padding: '20px', margin: '10px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', backgroundColor: 'white' };
+
 	var picLocation = './../../assets/gallerypics/';
 
 	var About = function (_Component) {
@@ -41064,7 +41066,7 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'row' },
-	            _react2.default.createElement('img', { style: _extends({}, picDefault, { width: '75%', height: '500px' }), src: picLocation + 'kezar.jpg' })
+	            _react2.default.createElement('img', { style: _extends({}, picDefault, { width: '75%', height: '500px', marginLeft: '10%' }), src: picLocation + 'kezar.jpg' })
 	          ),
 	          _react2.default.createElement('div', { style: { height: '50px' } }),
 	          _react2.default.createElement(
@@ -41077,8 +41079,14 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'row' },
-	            _react2.default.createElement('img', { style: _extends({}, picDefault, { width: '50%' }), src: picLocation + 'gordon.jpg' }),
+	            _react2.default.createElement('img', { style: _extends({}, picDefault, { width: '50%', marginTop: '10%' }), src: picLocation + 'gordon.jpg' }),
 	            _react2.default.createElement('img', { style: _extends({}, picDefault, { height: '600px', float: 'right' }), src: picLocation + 'HENDERSON.jpg' })
+	          ),
+	          _react2.default.createElement('div', { style: { height: '50px' } }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'row' },
+	            _react2.default.createElement('img', { style: _extends({}, picDefault, { width: '50%', marginLeft: '35%' }), src: picLocation + 'whoville.jpg' })
 	          )
 	        )
 	      );
