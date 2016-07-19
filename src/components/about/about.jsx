@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 //import NavBar from './../navBar';
 import Nav from './../nav';
-import HomeWall from './../home/homeWall';
 
+//background styling for whole page
 let bgStyle = {height: '100%', width: '100%', objectFit: 'fill', zIndex: '-100', position: 'fixed', opacity: '0.1'};
-
+//default picture stylings
 let picDefault = {height: '400px', width: '40%', padding: '20px', margin: '10px',boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', backgroundColor: 'white'};
-
+//picture location
 let picLocation = './../../assets/gallerypics/';
 
 export default class About extends Component {

@@ -40998,10 +40998,6 @@
 
 	var _nav2 = _interopRequireDefault(_nav);
 
-	var _homeWall = __webpack_require__(247);
-
-	var _homeWall2 = _interopRequireDefault(_homeWall);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -41012,10 +41008,11 @@
 	//import NavBar from './../navBar';
 
 
+	//background styling for whole page
 	var bgStyle = { height: '100%', width: '100%', objectFit: 'fill', zIndex: '-100', position: 'fixed', opacity: '0.1' };
-
+	//default picture stylings
 	var picDefault = { height: '400px', width: '40%', padding: '20px', margin: '10px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', backgroundColor: 'white' };
-
+	//picture location
 	var picLocation = './../../assets/gallerypics/';
 
 	var About = function (_Component) {
