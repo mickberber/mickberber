@@ -28,17 +28,7 @@
 }
 
 
-/* Nav bar styles*/
-.navbar {
-    background-color: transparent;
-    background: transparent;
-    border-width: 0px;
-}
 
-.mbLogoSm {
-	height: 30px;
-	width: 40px;
-}
 
 /* create space for text from top of walls */
 
@@ -65,28 +55,6 @@
 	background-position: center;
   background-size: cover;
 }
-
-/* Gilson Wall Attributes */
-
-.gilsonStructure {
-  position: relative;
-	height: 800px;
-	width: 100%;
-	z-index: 1;
-}
-
-.gilsonBackground {
-  background: url('./../src/assets/wallAssets/gilsonStage.png');
-	background-attachment: scroll;
-	background-position: center;
-  background-size: cover;
-}
-
-.gilsonText {
-  color: white;
-  font-size: 30px;
-}
-
 
 
 /* Chutte Wall Attributes */

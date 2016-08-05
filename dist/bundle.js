@@ -26969,12 +26969,19 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	/* Nav bar styles*/
+	var navbar = {
+	  backgroundColor: 'transparent',
+	  background: 'transparent',
+	  borderWidth: '0px'
+	};
+
 	var Nav = function Nav(_ref) {
 	  var textColor = _ref.textColor;
 
 	  return _react2.default.createElement(
 	    'nav',
-	    { className: 'navbar navbar-inverse navbar-fixed-top' },
+	    { className: 'navbar navbar-inverse navbar-fixed-top', style: navbar },
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'container-fluid' },

@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 
+/* Nav bar styles*/
+const navbar = {
+    backgroundColor: 'transparent',
+    background: 'transparent',
+    borderWidth: '0px'
+}
+
 const Nav = ({ textColor }) => {
     return (
-        <nav className="navbar navbar-inverse navbar-fixed-top">
+        <nav className="navbar navbar-inverse navbar-fixed-top" style={navbar}>
           <div className="container-fluid">
             <div className="navbar-collapse collapse" id="footer">
               <ul className="nav navbar-nav">
