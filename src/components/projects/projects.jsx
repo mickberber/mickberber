@@ -13,7 +13,7 @@ class Projects extends Component {
     return(
       <div>
         <Nav />
-        <GilsonWall background='gilsonBackground' wall='gilsonStructure' />
+        <GilsonWall />
         <ReChatWall background='reChatBackground' wall='reChatStructure'/>
         <TinnrWall background='tinnrBackground' wall='tinnrStructure' />
         <McTestingWall background='mcTestingBackground' wall='mcTestingStructure' />

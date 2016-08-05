@@ -27180,7 +27180,7 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(_nav2.default, null),
-	        _react2.default.createElement(_gilsonWall2.default, { background: 'gilsonBackground', wall: 'gilsonStructure' }),
+	        _react2.default.createElement(_gilsonWall2.default, null),
 	        _react2.default.createElement(_reChatWall2.default, { background: 'reChatBackground', wall: 'reChatStructure' }),
 	        _react2.default.createElement(_tinnrWall2.default, { background: 'tinnrBackground', wall: 'tinnrStructure' }),
 	        _react2.default.createElement(_mcTestingWall2.default, { background: 'mcTestingBackground', wall: 'mcTestingStructure' }),
@@ -27334,133 +27334,119 @@
 	  value: true
 	});
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	var _react = __webpack_require__(2);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(252);
-
-	var _classnames2 = _interopRequireDefault(_classnames);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	var gilsonStructure = {
+	  position: 'relative',
+	  height: '800px',
+	  width: '100%',
+	  zIndex: '1',
+	  background: 'url("./../src/assets/wallAssets/gilsonStage.png")',
+	  backgroundAttachment: 'scroll',
+	  backgroundPosition: 'center',
+	  backgroundSize: 'cover'
+	};
 
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	var gilsonText = {
+	  color: 'white',
+	  fontSize: '30px',
+	  textAlign: 'center'
+	};
 
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var GilsonWall = function (_Component) {
-	  _inherits(GilsonWall, _Component);
-
-	  function GilsonWall(props) {
-	    _classCallCheck(this, GilsonWall);
-
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(GilsonWall).call(this, props));
-
-	    _this.props = props;
-	    return _this;
-	  }
-
-	  _createClass(GilsonWall, [{
-	    key: 'render',
-	    value: function render() {
-	      var classesWall = (0, _classnames2.default)(this.props.wall, this.props.background);;
-	      return _react2.default.createElement(
+	var GilsonWall = function GilsonWall() {
+	  return _react2.default.createElement(
+	    'div',
+	    { style: gilsonStructure },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'row' },
+	      _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
+	      _react2.default.createElement(
 	        'div',
-	        { className: classesWall },
+	        { className: 'col-xs-12 col-md-8' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'row' },
-	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
+	          { className: 'dropTopSm' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'col-xs-12 col-md-8' },
+	            { className: 'center', style: gilsonText },
 	            _react2.default.createElement(
-	              'div',
-	              { className: 'dropTopSm' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'center gilsonText' },
-	                _react2.default.createElement(
-	                  'a',
-	                  { style: { color: 'white' }, href: 'https://gilson.herokuapp.com/' },
-	                  _react2.default.createElement('i', { className: 'fa fa-area-chart fa-5x' }),
-	                  'Team Rubicon Mobilizer'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'a',
-	                { href: 'https://www.docusign.com/blog/docusign-and-team-rubicon-join-forces-to-streamline-disaster-relief-efforts-in-hack-for-good/' },
-	                _react2.default.createElement('img', { className: 'center-block', style: { height: '275px' }, src: 'https://www.docusign.com/blog/wp-content/uploads/2016/03/Screen-Shot-2016-03-11-at-11.11.05-AM.png' })
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'center gilsonText' },
-	                'Grand Prize winning Team Gilsons!',
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://github.com/mickberber' },
-	                  _react2.default.createElement(
-	                    'h5',
-	                    null,
-	                    'Myself  ',
-	                    _react2.default.createElement('img', { src: './src/assets/github-32.png' })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://github.com/seanagibson' },
-	                  _react2.default.createElement(
-	                    'h5',
-	                    null,
-	                    'Sean Gibson  ',
-	                    _react2.default.createElement('img', { src: './src/assets/github-32.png' })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://github.com/malekascha' },
-	                  _react2.default.createElement(
-	                    'h5',
-	                    null,
-	                    'Malek Ascha  ',
-	                    _react2.default.createElement('img', { src: './src/assets/github-32.png' })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://github.com/elliotschi' },
-	                  _react2.default.createElement(
-	                    'h5',
-	                    null,
-	                    'Elliot Chi  ',
-	                    _react2.default.createElement('img', { src: './src/assets/github-32.png' })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://github.com/bgoodfliesh' },
-	                  _react2.default.createElement(
-	                    'h5',
-	                    null,
-	                    'Brandon Goodfliesh  ',
-	                    _react2.default.createElement('img', { src: './src/assets/github-32.png' })
-	                  )
-	                )
-	              )
+	              'a',
+	              { style: { color: 'white' }, href: 'https://gilson.herokuapp.com/' },
+	              _react2.default.createElement('i', { className: 'fa fa-area-chart fa-5x' }),
+	              'Team Rubicon Mobilizer'
 	            )
 	          ),
-	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' })
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://www.docusign.com/blog/docusign-and-team-rubicon-join-forces-to-streamline-disaster-relief-efforts-in-hack-for-good/' },
+	            _react2.default.createElement('img', { className: 'center-block', style: { height: '275px' }, src: 'https://www.docusign.com/blog/wp-content/uploads/2016/03/Screen-Shot-2016-03-11-at-11.11.05-AM.png' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { style: gilsonText },
+	            'Grand Prize winning Team Gilsons!',
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://github.com/mickberber' },
+	              _react2.default.createElement(
+	                'h5',
+	                null,
+	                'Myself  ',
+	                _react2.default.createElement('img', { src: './src/assets/github-32.png' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://github.com/seanagibson' },
+	              _react2.default.createElement(
+	                'h5',
+	                null,
+	                'Sean Gibson  ',
+	                _react2.default.createElement('img', { src: './src/assets/github-32.png' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://github.com/malekascha' },
+	              _react2.default.createElement(
+	                'h5',
+	                null,
+	                'Malek Ascha  ',
+	                _react2.default.createElement('img', { src: './src/assets/github-32.png' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://github.com/elliotschi' },
+	              _react2.default.createElement(
+	                'h5',
+	                null,
+	                'Elliot Chi  ',
+	                _react2.default.createElement('img', { src: './src/assets/github-32.png' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://github.com/bgoodfliesh' },
+	              _react2.default.createElement(
+	                'h5',
+	                null,
+	                'Brandon Goodfliesh  ',
+	                _react2.default.createElement('img', { src: './src/assets/github-32.png' })
+	              )
+	            )
+	          )
 	        )
-	      );
-	    }
-	  }]);
-
-	  return GilsonWall;
-	}(_react.Component);
+	      ),
+	      _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' })
+	    )
+	  );
+	};
 
 	exports.default = GilsonWall;
 
