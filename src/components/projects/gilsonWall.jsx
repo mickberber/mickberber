@@ -23,8 +23,8 @@ const GilsonWall = () => {
           <div className='row'>
             <div className='col-xs-3 col-md-2' />
             <div className='col-xs-12 col-md-8'>
-              <div className='dropTopSm'>
-                <div className='center' style={gilsonText}>
+              <div style={{	marginTop: '25px'}}>
+                <div style={gilsonText}>
                   <a style={{color:'white'}} href='https://gilson.herokuapp.com/'><i className="fa fa-area-chart fa-5x"></i>Team Rubicon Mobilizer</a>
                 </div>
                 <a href='https://www.docusign.com/blog/docusign-and-team-rubicon-join-forces-to-streamline-disaster-relief-efforts-in-hack-for-good/'>

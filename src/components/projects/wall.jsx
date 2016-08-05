@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-/* Logo Wall Attributes */
 const logoStructure = {
   position: 'relative',
 	height: '720px',

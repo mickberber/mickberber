@@ -1,21 +1,29 @@
 import React, { Component } from 'react';
 import VideoPlayer from './videoPlayer';
-import CN from 'classnames';
 
-class ChutteWall extends Component {
-  constructor(props) {
-    super(props);
-    this.props = props;
-  }
-  render() {
-    const classesWall = CN(this.props.wall, this.props.background);
+
+/* Chutte Wall Attributes */
+
+const chutteStructure = {
+  position: 'relative',
+	height: '800px',
+	width: '100%',
+	zIndex: '1',
+	background: 'url("./../src/assets/wallAssets/chuttelogo.png")',
+	backgroundAttachment: 'scroll',
+	backgroundPosition: 'center',
+  backgroundSize: 'cover'
+}
+
+
+const ChutteWall = () => {
     return (
-      <div className={classesWall}>
+      <div style={chutteStructure}>
           <div className='row'>
             <div className='col-xs-3 col-md-2' />
             <div className='col-xs-12 col-md-8'>
               <VideoPlayer />
-              <div className='center'>
+              <div style={{textAlign: 'center'}}>
               <a href='http://www.chutte.com'><h3>Chutte.com</h3></a>
               <h3>A reverse auction style marketplace.</h3>
               <img style={{height: '50px', width: '50px'}}src='./../assets/wallAssets/kgbjs.png'/><h4>KGBJS</h4>
@@ -29,7 +37,6 @@ class ChutteWall extends Component {
           </div>
       </div>
     )
-  }
 }
 
 export default ChutteWall;

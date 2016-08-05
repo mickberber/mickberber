@@ -38,27 +38,6 @@
 }
 
 
-/* Chutte Wall Attributes */
-
-.chutteStructure {
-  position: relative;
-	height: 800px;
-	width: 100%;
-	z-index: 1;
-}
-
-.chutteBackground {
-	background: url('./../src/assets/wallAssets/chuttelogo.png');
-	background-attachment: scroll;
-	background-position: center;
-  background-size: cover;
-}
-
-.chutteText {
-  color: black;
-  font-size: 30px;
-}
-
 /* Social Flix Wall Attributes */
 
 .socialStructure {

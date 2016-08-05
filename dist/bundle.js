@@ -27191,9 +27191,9 @@
 	        _react2.default.createElement(_reChatWall2.default, { background: 'reChatBackground', wall: 'reChatStructure' }),
 	        _react2.default.createElement(_tinnrWall2.default, { background: 'tinnrBackground', wall: 'tinnrStructure' }),
 	        _react2.default.createElement(_mcTestingWall2.default, { background: 'mcTestingBackground', wall: 'mcTestingStructure' }),
-	        _react2.default.createElement(_chutteWall2.default, { background: 'chutteBackground', wall: 'chutteStructure' }),
+	        _react2.default.createElement(_chutteWall2.default, null),
 	        _react2.default.createElement(_socialWall2.default, { background: 'socialBackground', wall: 'socialStructure' }),
-	        _react2.default.createElement(_wall2.default, { background: 'logoBackground', wall: 'logoStructure' })
+	        _react2.default.createElement(_wall2.default, null)
 	      );
 	    }
 	  }]);
@@ -40245,7 +40245,6 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	/* Logo Wall Attributes */
 	var logoStructure = {
 	  position: 'relative',
 	  height: '720px',
@@ -40336,10 +40335,10 @@
 	        { className: 'col-xs-12 col-md-8' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'dropTopSm' },
+	          { style: { marginTop: '25px' } },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'center', style: gilsonText },
+	            { style: gilsonText },
 	            _react2.default.createElement(
 	              'a',
 	              { style: { color: 'white' }, href: 'https://gilson.herokuapp.com/' },
@@ -40426,8 +40425,6 @@
 	  value: true
 	});
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	var _react = __webpack_require__(2);
 
 	var _react2 = _interopRequireDefault(_react);
@@ -40436,118 +40433,102 @@
 
 	var _videoPlayer2 = _interopRequireDefault(_videoPlayer);
 
-	var _classnames = __webpack_require__(252);
-
-	var _classnames2 = _interopRequireDefault(_classnames);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	/* Chutte Wall Attributes */
 
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	var chutteStructure = {
+	  position: 'relative',
+	  height: '800px',
+	  width: '100%',
+	  zIndex: '1',
+	  background: 'url("./../src/assets/wallAssets/chuttelogo.png")',
+	  backgroundAttachment: 'scroll',
+	  backgroundPosition: 'center',
+	  backgroundSize: 'cover'
+	};
 
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var ChutteWall = function (_Component) {
-	  _inherits(ChutteWall, _Component);
-
-	  function ChutteWall(props) {
-	    _classCallCheck(this, ChutteWall);
-
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ChutteWall).call(this, props));
-
-	    _this.props = props;
-	    return _this;
-	  }
-
-	  _createClass(ChutteWall, [{
-	    key: 'render',
-	    value: function render() {
-	      var classesWall = (0, _classnames2.default)(this.props.wall, this.props.background);
-	      return _react2.default.createElement(
+	var ChutteWall = function ChutteWall() {
+	  return _react2.default.createElement(
+	    'div',
+	    { style: chutteStructure },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'row' },
+	      _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
+	      _react2.default.createElement(
 	        'div',
-	        { className: classesWall },
+	        { className: 'col-xs-12 col-md-8' },
+	        _react2.default.createElement(_videoPlayer2.default, null),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'row' },
-	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
+	          { style: { textAlign: 'center' } },
 	          _react2.default.createElement(
-	            'div',
-	            { className: 'col-xs-12 col-md-8' },
-	            _react2.default.createElement(_videoPlayer2.default, null),
+	            'a',
+	            { href: 'http://www.chutte.com' },
 	            _react2.default.createElement(
-	              'div',
-	              { className: 'center' },
-	              _react2.default.createElement(
-	                'a',
-	                { href: 'http://www.chutte.com' },
-	                _react2.default.createElement(
-	                  'h3',
-	                  null,
-	                  'Chutte.com'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'h3',
-	                null,
-	                'A reverse auction style marketplace.'
-	              ),
-	              _react2.default.createElement('img', { style: { height: '50px', width: '50px' }, src: './../assets/wallAssets/kgbjs.png' }),
-	              _react2.default.createElement(
-	                'h4',
-	                null,
-	                'KGBJS'
-	              ),
-	              _react2.default.createElement(
-	                'a',
-	                { href: 'https://github.com/mickberber' },
-	                _react2.default.createElement(
-	                  'h5',
-	                  null,
-	                  'Myself  ',
-	                  _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'a',
-	                { href: 'https://github.com/seanagibson' },
-	                _react2.default.createElement(
-	                  'h5',
-	                  null,
-	                  'Sean Gibson  ',
-	                  _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'a',
-	                { href: 'https://github.com/peterkaiserui' },
-	                _react2.default.createElement(
-	                  'h5',
-	                  null,
-	                  'Peter Kaiser  ',
-	                  _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'a',
-	                { href: 'https://github.com/beresford211' },
-	                _react2.default.createElement(
-	                  'h5',
-	                  null,
-	                  'Tim Steele  ',
-	                  _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
-	                )
-	              )
+	              'h3',
+	              null,
+	              'Chutte.com'
 	            )
 	          ),
-	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' })
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            'A reverse auction style marketplace.'
+	          ),
+	          _react2.default.createElement('img', { style: { height: '50px', width: '50px' }, src: './../assets/wallAssets/kgbjs.png' }),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            'KGBJS'
+	          ),
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://github.com/mickberber' },
+	            _react2.default.createElement(
+	              'h5',
+	              null,
+	              'Myself  ',
+	              _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://github.com/seanagibson' },
+	            _react2.default.createElement(
+	              'h5',
+	              null,
+	              'Sean Gibson  ',
+	              _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://github.com/peterkaiserui' },
+	            _react2.default.createElement(
+	              'h5',
+	              null,
+	              'Peter Kaiser  ',
+	              _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://github.com/beresford211' },
+	            _react2.default.createElement(
+	              'h5',
+	              null,
+	              'Tim Steele  ',
+	              _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
+	            )
+	          )
 	        )
-	      );
-	    }
-	  }]);
-
-	  return ChutteWall;
-	}(_react.Component);
+	      ),
+	      _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' })
+	    )
+	  );
+	};
 
 	exports.default = ChutteWall;
 
