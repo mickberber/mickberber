@@ -1,6 +1,22 @@
 import React, { Component } from 'react';
 import CN from 'classnames';
 
+// /* Tinnr++ Wall Attributes */
+//
+// .tinnrStructure {
+//   position: relative;
+// 	height: 800px;
+// 	width: 100%;
+// 	z-index: 1;
+// }
+//
+// .tinnrBackground {
+// 	background: url('./../src/assets/wallAssets/tinnrss.png');
+// 	background-attachment: scroll;
+// 	background-position: center;
+//   background-size: cover;
+// }
+
 class TinnrWall extends Component {
   constructor(props) {
     super(props);

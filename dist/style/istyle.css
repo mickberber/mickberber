@@ -37,23 +37,6 @@
 	margin-top: 25px;
 }
 
-
-/* Social Flix Wall Attributes */
-
-.socialStructure {
-  position: relative;
-	height: 800px;
-	width: 100%;
-	z-index: 1;
-}
-
-.socialBackground {
-  background: url('./../src/assets/wallAssets/socialflixss.png');
-	background-attachment: scroll;
-	background-position: center;
-  background-size: cover;
-}
-
 /* Tinnr++ Wall Attributes */
 
 .tinnrStructure {
@@ -68,42 +51,4 @@
 	background-attachment: scroll;
 	background-position: center;
   background-size: cover;
-}
-
-/* McTesting.js Wall Attributes */
-
-.mcTestingStructure {
-  position: relative;
-	height: 800px;
-	width: 100%;
-	z-index: 1;
-}
-
-.mcTestingBackground {
-	background: url('./../src/assets/npmmcTesting.png');
-	background-attachment: scroll;
-	background-position: center;
-  background-size: cover;
-}
-
-/* ReChat Wall Attributes */
-
-.reChatStructure {
-  position: relative;
-	height: 800px;
-	width: 100%;
-	z-index: 1;
-}
-
-.reChatBackground {
-	background: url('./../src/assets/wallAssets/rechat.png');
-	background-attachment: scroll;
-	background-position: center;
-  background-size: cover;
-}
-
-/* Twitter style */
-.centerTwit {
-  width: 80%;
-  margin: auto;
 }

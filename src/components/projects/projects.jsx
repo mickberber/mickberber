@@ -13,11 +13,11 @@ const Projects = () => {
       <div>
         <Nav />
         <GilsonWall />
-        <ReChatWall background='reChatBackground' wall='reChatStructure'/>
+        <ReChatWall />
         <TinnrWall background='tinnrBackground' wall='tinnrStructure' />
         <McTestingWall />
         <ChutteWall />
-        <SocialWall background='socialBackground' wall='socialStructure' />
+        <SocialWall />
         <LogoWall />
       </div>
     )

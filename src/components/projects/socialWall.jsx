@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
 import CN from 'classnames';
 
-class SocialWall extends Component {
-  constructor(props) {
-    super(props);
-    this.props = props;
-  }
-  render() {
-    const classesWall = CN(this.props.wall, this.props.background);
+/* Social Flix Wall Attributes */
+
+const socialStructure = {
+  position: 'relative',
+	height: '800px',
+	width: '100%',
+	zIndex: '1',
+  background: "url('./../src/assets/wallAssets/socialflixss.png')",
+	backgroundAttachment: 'scroll',
+	backgroundPosition: 'center',
+  backgroundSize: 'cover'
+}
+
+const SocialWall = () => {
     return (
-      <div className={classesWall}>
+      <div style={socialStructure}>
           <div className='row'>
             <div className='col-xs-3 col-md-2' />
             <div className='col-xs-3 col-md-2' />
@@ -31,8 +38,7 @@ class SocialWall extends Component {
             </div>
           </div>
       </div>
-    )
-  }
+    );
 }
 
 export default SocialWall;
