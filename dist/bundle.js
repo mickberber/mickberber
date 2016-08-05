@@ -27124,31 +27124,31 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _wall = __webpack_require__(251);
+	var _wall = __webpack_require__(467);
 
 	var _wall2 = _interopRequireDefault(_wall);
 
-	var _gilsonWall = __webpack_require__(253);
+	var _gilsonWall = __webpack_require__(468);
 
 	var _gilsonWall2 = _interopRequireDefault(_gilsonWall);
 
-	var _chutteWall = __webpack_require__(254);
+	var _chutteWall = __webpack_require__(469);
 
 	var _chutteWall2 = _interopRequireDefault(_chutteWall);
 
-	var _socialWall = __webpack_require__(461);
+	var _socialWall = __webpack_require__(471);
 
 	var _socialWall2 = _interopRequireDefault(_socialWall);
 
-	var _tinnrWall = __webpack_require__(462);
+	var _tinnrWall = __webpack_require__(472);
 
 	var _tinnrWall2 = _interopRequireDefault(_tinnrWall);
 
-	var _mcTestingWall = __webpack_require__(463);
+	var _mcTestingWall = __webpack_require__(473);
 
 	var _mcTestingWall2 = _interopRequireDefault(_mcTestingWall);
 
-	var _reChatWall = __webpack_require__(464);
+	var _reChatWall = __webpack_require__(474);
 
 	var _reChatWall2 = _interopRequireDefault(_reChatWall);
 
@@ -27197,80 +27197,7 @@
 	exports.default = Projects;
 
 /***/ },
-/* 251 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _classnames = __webpack_require__(252);
-
-	var _classnames2 = _interopRequireDefault(_classnames);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var LogoWall = function (_Component) {
-	  _inherits(LogoWall, _Component);
-
-	  function LogoWall(props) {
-	    _classCallCheck(this, LogoWall);
-
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(LogoWall).call(this, props));
-
-	    _this.props = props;
-	    return _this;
-	  }
-
-	  _createClass(LogoWall, [{
-	    key: 'render',
-	    value: function render() {
-	      var classesWall = (0, _classnames2.default)(this.props.wall, this.props.background, 'center');
-	      return _react2.default.createElement(
-	        'div',
-	        { className: classesWall },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'row row-eq-height' },
-	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'col-xs-12 col-md-8 center', style: { height: '620px' } },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'bottom' },
-	              'This site was built with:',
-	              _react2.default.createElement('img', { style: { height: '100px', width: '70px' }, src: './../assets/wallAssets/reactjs.png' }),
-	              'And deployed on:',
-	              _react2.default.createElement('img', { style: { height: '100px', width: '120px' }, src: './../assets/wallAssets/heroku.png' })
-	            )
-	          ),
-	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' })
-	        )
-	      );
-	    }
-	  }]);
-
-	  return LogoWall;
-	}(_react.Component);
-
-	exports.default = LogoWall;
-
-/***/ },
+/* 251 */,
 /* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -27325,334 +27252,9 @@
 
 
 /***/ },
-/* 253 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var gilsonStructure = {
-	  position: 'relative',
-	  height: '800px',
-	  width: '100%',
-	  zIndex: '1',
-	  background: 'url("./../src/assets/wallAssets/gilsonStage.png")',
-	  backgroundAttachment: 'scroll',
-	  backgroundPosition: 'center',
-	  backgroundSize: 'cover'
-	};
-
-	var gilsonText = {
-	  color: 'white',
-	  fontSize: '30px',
-	  textAlign: 'center'
-	};
-
-	var GilsonWall = function GilsonWall() {
-	  return _react2.default.createElement(
-	    'div',
-	    { style: gilsonStructure },
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'row' },
-	      _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'col-xs-12 col-md-8' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'dropTopSm' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'center', style: gilsonText },
-	            _react2.default.createElement(
-	              'a',
-	              { style: { color: 'white' }, href: 'https://gilson.herokuapp.com/' },
-	              _react2.default.createElement('i', { className: 'fa fa-area-chart fa-5x' }),
-	              'Team Rubicon Mobilizer'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'a',
-	            { href: 'https://www.docusign.com/blog/docusign-and-team-rubicon-join-forces-to-streamline-disaster-relief-efforts-in-hack-for-good/' },
-	            _react2.default.createElement('img', { className: 'center-block', style: { height: '275px' }, src: 'https://www.docusign.com/blog/wp-content/uploads/2016/03/Screen-Shot-2016-03-11-at-11.11.05-AM.png' })
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { style: gilsonText },
-	            'Grand Prize winning Team Gilsons!',
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'https://github.com/mickberber' },
-	              _react2.default.createElement(
-	                'h5',
-	                null,
-	                'Myself  ',
-	                _react2.default.createElement('img', { src: './src/assets/github-32.png' })
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'https://github.com/seanagibson' },
-	              _react2.default.createElement(
-	                'h5',
-	                null,
-	                'Sean Gibson  ',
-	                _react2.default.createElement('img', { src: './src/assets/github-32.png' })
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'https://github.com/malekascha' },
-	              _react2.default.createElement(
-	                'h5',
-	                null,
-	                'Malek Ascha  ',
-	                _react2.default.createElement('img', { src: './src/assets/github-32.png' })
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'https://github.com/elliotschi' },
-	              _react2.default.createElement(
-	                'h5',
-	                null,
-	                'Elliot Chi  ',
-	                _react2.default.createElement('img', { src: './src/assets/github-32.png' })
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'https://github.com/bgoodfliesh' },
-	              _react2.default.createElement(
-	                'h5',
-	                null,
-	                'Brandon Goodfliesh  ',
-	                _react2.default.createElement('img', { src: './src/assets/github-32.png' })
-	              )
-	            )
-	          )
-	        )
-	      ),
-	      _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' })
-	    )
-	  );
-	};
-
-	exports.default = GilsonWall;
-
-/***/ },
-/* 254 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _videoPlayer = __webpack_require__(255);
-
-	var _videoPlayer2 = _interopRequireDefault(_videoPlayer);
-
-	var _classnames = __webpack_require__(252);
-
-	var _classnames2 = _interopRequireDefault(_classnames);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var ChutteWall = function (_Component) {
-	  _inherits(ChutteWall, _Component);
-
-	  function ChutteWall(props) {
-	    _classCallCheck(this, ChutteWall);
-
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ChutteWall).call(this, props));
-
-	    _this.props = props;
-	    return _this;
-	  }
-
-	  _createClass(ChutteWall, [{
-	    key: 'render',
-	    value: function render() {
-	      var classesWall = (0, _classnames2.default)(this.props.wall, this.props.background);
-	      return _react2.default.createElement(
-	        'div',
-	        { className: classesWall },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'row' },
-	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'col-xs-12 col-md-8' },
-	            _react2.default.createElement(_videoPlayer2.default, null),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'center' },
-	              _react2.default.createElement(
-	                'a',
-	                { href: 'http://www.chutte.com' },
-	                _react2.default.createElement(
-	                  'h3',
-	                  null,
-	                  'Chutte.com'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'h3',
-	                null,
-	                'A reverse auction style marketplace.'
-	              ),
-	              _react2.default.createElement('img', { style: { height: '50px', width: '50px' }, src: './../assets/wallAssets/kgbjs.png' }),
-	              _react2.default.createElement(
-	                'h4',
-	                null,
-	                'KGBJS'
-	              ),
-	              _react2.default.createElement(
-	                'a',
-	                { href: 'https://github.com/mickberber' },
-	                _react2.default.createElement(
-	                  'h5',
-	                  null,
-	                  'Myself  ',
-	                  _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'a',
-	                { href: 'https://github.com/seanagibson' },
-	                _react2.default.createElement(
-	                  'h5',
-	                  null,
-	                  'Sean Gibson  ',
-	                  _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'a',
-	                { href: 'https://github.com/peterkaiserui' },
-	                _react2.default.createElement(
-	                  'h5',
-	                  null,
-	                  'Peter Kaiser  ',
-	                  _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'a',
-	                { href: 'https://github.com/beresford211' },
-	                _react2.default.createElement(
-	                  'h5',
-	                  null,
-	                  'Tim Steele  ',
-	                  _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
-	                )
-	              )
-	            )
-	          ),
-	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' })
-	        )
-	      );
-	    }
-	  }]);
-
-	  return ChutteWall;
-	}(_react.Component);
-
-	exports.default = ChutteWall;
-
-/***/ },
-/* 255 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactYoutube = __webpack_require__(256);
-
-	var _reactYoutube2 = _interopRequireDefault(_reactYoutube);
-
-	var _classnames = __webpack_require__(252);
-
-	var _classnames2 = _interopRequireDefault(_classnames);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var VideoPlayer = function (_Component) {
-	  _inherits(VideoPlayer, _Component);
-
-	  function VideoPlayer() {
-	    _classCallCheck(this, VideoPlayer);
-
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(VideoPlayer).apply(this, arguments));
-	  }
-
-	  _createClass(VideoPlayer, [{
-	    key: 'render',
-	    value: function render() {
-	      var videoSource = '7_P6H5tIYqs';
-	      var opts = {
-	        height: '390',
-	        width: '640',
-	        playerVars: { // https://developers.google.com/youtube/player_parameters
-	          autoplay: 0
-	        }
-	      };
-	      var classes = (0, _classnames2.default)('center-block');
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(_reactYoutube2.default, { className: classes, videoId: videoSource, opts: opts,
-	          onReady: this._onReady })
-	      );
-	    }
-	  }]);
-
-	  return VideoPlayer;
-	}(_react.Component);
-
-	exports.default = VideoPlayer;
-
-/***/ },
+/* 253 */,
+/* 254 */,
+/* 255 */,
 /* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -40438,441 +40040,10 @@
 
 
 /***/ },
-/* 461 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _classnames = __webpack_require__(252);
-
-	var _classnames2 = _interopRequireDefault(_classnames);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var SocialWall = function (_Component) {
-	  _inherits(SocialWall, _Component);
-
-	  function SocialWall(props) {
-	    _classCallCheck(this, SocialWall);
-
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(SocialWall).call(this, props));
-
-	    _this.props = props;
-	    return _this;
-	  }
-
-	  _createClass(SocialWall, [{
-	    key: 'render',
-	    value: function render() {
-	      var classesWall = (0, _classnames2.default)(this.props.wall, this.props.background);
-	      return _react2.default.createElement(
-	        'div',
-	        { className: classesWall },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'row' },
-	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
-	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'col-xs-12 col-md-8' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'right dropTopLrg', style: { color: 'white' } },
-	              _react2.default.createElement(
-	                'h3',
-	                null,
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'http://socialflix.herokuapp.com' },
-	                  'Socialflix ',
-	                  _react2.default.createElement('i', { className: 'fa fa-film', 'aria-hidden': 'true' })
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'h4',
-	                null,
-	                'Via ',
-	                _react2.default.createElement('img', { style: { height: '50px', width: '100px' }, src: './src/assets//wallAssets/socketio.png' })
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'right' },
-	                'MiddleOutHomeBrewCrew',
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://github.com/mickberber' },
-	                  _react2.default.createElement(
-	                    'h5',
-	                    null,
-	                    'Myself  ',
-	                    _react2.default.createElement('img', { src: './src/assets/github-32.png' })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://github.com/ycube' },
-	                  _react2.default.createElement(
-	                    'h5',
-	                    null,
-	                    'Yale Yuen  ',
-	                    _react2.default.createElement('img', { src: './src/assets/github-32.png' })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://github.com/abibbs' },
-	                  _react2.default.createElement(
-	                    'h5',
-	                    null,
-	                    'Anthony Bibbs  ',
-	                    _react2.default.createElement('img', { src: './src/assets/github-32.png' })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://github.com/spiterman' },
-	                  _react2.default.createElement(
-	                    'h5',
-	                    null,
-	                    'Sergey Piterman  ',
-	                    _react2.default.createElement('img', { src: './src/assets/github-32.png' })
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return SocialWall;
-	}(_react.Component);
-
-	exports.default = SocialWall;
-
-/***/ },
-/* 462 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _classnames = __webpack_require__(252);
-
-	var _classnames2 = _interopRequireDefault(_classnames);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var TinnrWall = function (_Component) {
-	  _inherits(TinnrWall, _Component);
-
-	  function TinnrWall(props) {
-	    _classCallCheck(this, TinnrWall);
-
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(TinnrWall).call(this, props));
-
-	    _this.props = props;
-	    return _this;
-	  }
-
-	  _createClass(TinnrWall, [{
-	    key: 'render',
-	    value: function render() {
-	      var classesWall = (0, _classnames2.default)(this.props.wall, this.props.background);
-	      return _react2.default.createElement(
-	        'div',
-	        { className: classesWall },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'row' },
-	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
-	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'col-xs-12 col-md-8' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'right', style: { marginTop: '65px', color: 'grey' } },
-	              _react2.default.createElement(
-	                'h3',
-	                null,
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'http://www.tinnrplusplus.herokuapp.com' },
-	                  'Tinnr ',
-	                  _react2.default.createElement('i', { className: 'fa fa-plus-circle', 'aria-hidden': 'true' })
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'h3',
-	                null,
-	                'A web application to help pick recipes'
-	              ),
-	              _react2.default.createElement(
-	                'h4',
-	                null,
-	                'With mobile swiping capability'
-	              ),
-	              _react2.default.createElement(
-	                'h4',
-	                null,
-	                'Via ',
-	                _react2.default.createElement('img', { style: { height: '50px', width: '100px' }, src: './src/assets/hammer.png' })
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'right' },
-	                'MiddleOutHomeBrewCrew',
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://github.com/mickberber' },
-	                  _react2.default.createElement(
-	                    'h5',
-	                    null,
-	                    'Myself  ',
-	                    _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://github.com/ycube' },
-	                  _react2.default.createElement(
-	                    'h5',
-	                    null,
-	                    'Yale Yuen  ',
-	                    _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://github.com/abibbs' },
-	                  _react2.default.createElement(
-	                    'h5',
-	                    null,
-	                    'Anthony Bibbs  ',
-	                    _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://github.com/spiterman' },
-	                  _react2.default.createElement(
-	                    'h5',
-	                    null,
-	                    'Sergey Piterman  ',
-	                    _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return TinnrWall;
-	}(_react.Component);
-
-	exports.default = TinnrWall;
-
-/***/ },
-/* 463 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _classnames = __webpack_require__(252);
-
-	var _classnames2 = _interopRequireDefault(_classnames);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var McTestingWall = function (_Component) {
-	  _inherits(McTestingWall, _Component);
-
-	  function McTestingWall(props) {
-	    _classCallCheck(this, McTestingWall);
-
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(McTestingWall).call(this, props));
-
-	    _this.props = props;
-	    return _this;
-	  }
-
-	  _createClass(McTestingWall, [{
-	    key: 'render',
-	    value: function render() {
-	      var classesWall = (0, _classnames2.default)(this.props.wall, this.props.background);;
-	      return _react2.default.createElement(
-	        'div',
-	        { className: classesWall },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'row' },
-	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
-	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'col-xs-12 col-md-8' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'right dropTopLrg' },
-	              _react2.default.createElement(
-	                'h3',
-	                null,
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://www.github.com/mickberber/mcTesting' },
-	                  'McTesting.js ',
-	                  _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'h3',
-	                null,
-	                'npm install mc-testing'
-	              )
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return McTestingWall;
-	}(_react.Component);
-
-	exports.default = McTestingWall;
-
-/***/ },
-/* 464 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _classnames = __webpack_require__(252);
-
-	var _classnames2 = _interopRequireDefault(_classnames);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var ReChatWall = function (_Component) {
-	  _inherits(ReChatWall, _Component);
-
-	  function ReChatWall(props) {
-	    _classCallCheck(this, ReChatWall);
-
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ReChatWall).call(this, props));
-
-	    _this.props = props;
-	    return _this;
-	  }
-
-	  _createClass(ReChatWall, [{
-	    key: 'render',
-	    value: function render() {
-	      var classesWall = (0, _classnames2.default)(this.props.wall, this.props.background);
-	      return _react2.default.createElement(
-	        'div',
-	        { className: classesWall },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'row' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'col-xs-4 col-md-3 dropTopLrg' },
-	            _react2.default.createElement(
-	              'div',
-	              { style: { fontSize: '25px', marginLeft: '40px' } },
-	              'Tutorial written for React, Horizon and Webpack',
-	              _react2.default.createElement(
-	                'a',
-	                { href: 'https://medium.com/front-end-hacking/react-webpack-and-horizon-quick-start-b9335c1ece53#.vawif2uba' },
-	                '\n',
-	                'Viewable Here'
-	              )
-	            ),
-	            _react2.default.createElement('img', { style: { width: '300px', height: '100px' }, src: './src/assets/horizon.png' })
-	          ),
-	          _react2.default.createElement('div', { className: 'col-xs-2 col-md-1' }),
-	          _react2.default.createElement('div', { className: 'col-xs-12 col-md-8' })
-	        )
-	      );
-	    }
-	  }]);
-
-	  return ReChatWall;
-	}(_react.Component);
-
-	exports.default = ReChatWall;
-
-/***/ },
+/* 461 */,
+/* 462 */,
+/* 463 */,
+/* 464 */,
 /* 465 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -41050,6 +40221,843 @@
 	};
 
 	exports.default = Contact;
+
+/***/ },
+/* 467 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _classnames = __webpack_require__(252);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var LogoWall = function (_Component) {
+	  _inherits(LogoWall, _Component);
+
+	  function LogoWall(props) {
+	    _classCallCheck(this, LogoWall);
+
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(LogoWall).call(this, props));
+
+	    _this.props = props;
+	    return _this;
+	  }
+
+	  _createClass(LogoWall, [{
+	    key: 'render',
+	    value: function render() {
+	      var classesWall = (0, _classnames2.default)(this.props.wall, this.props.background, 'center');
+	      return _react2.default.createElement(
+	        'div',
+	        { className: classesWall },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'row row-eq-height' },
+	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col-xs-12 col-md-8 center', style: { height: '620px' } },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'bottom' },
+	              'This site was built with:',
+	              _react2.default.createElement('img', { style: { height: '100px', width: '70px' }, src: './../assets/wallAssets/reactjs.png' }),
+	              'And deployed on:',
+	              _react2.default.createElement('img', { style: { height: '100px', width: '120px' }, src: './../assets/wallAssets/heroku.png' })
+	            )
+	          ),
+	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' })
+	        )
+	      );
+	    }
+	  }]);
+
+	  return LogoWall;
+	}(_react.Component);
+
+	exports.default = LogoWall;
+
+/***/ },
+/* 468 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var gilsonStructure = {
+	  position: 'relative',
+	  height: '800px',
+	  width: '100%',
+	  zIndex: '1',
+	  background: 'url("./../src/assets/wallAssets/gilsonStage.png")',
+	  backgroundAttachment: 'scroll',
+	  backgroundPosition: 'center',
+	  backgroundSize: 'cover'
+	};
+
+	var gilsonText = {
+	  color: 'white',
+	  fontSize: '30px',
+	  textAlign: 'center'
+	};
+
+	var GilsonWall = function GilsonWall() {
+	  return _react2.default.createElement(
+	    'div',
+	    { style: gilsonStructure },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'row' },
+	      _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'col-xs-12 col-md-8' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'dropTopSm' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'center', style: gilsonText },
+	            _react2.default.createElement(
+	              'a',
+	              { style: { color: 'white' }, href: 'https://gilson.herokuapp.com/' },
+	              _react2.default.createElement('i', { className: 'fa fa-area-chart fa-5x' }),
+	              'Team Rubicon Mobilizer'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://www.docusign.com/blog/docusign-and-team-rubicon-join-forces-to-streamline-disaster-relief-efforts-in-hack-for-good/' },
+	            _react2.default.createElement('img', { className: 'center-block', style: { height: '275px' }, src: 'https://www.docusign.com/blog/wp-content/uploads/2016/03/Screen-Shot-2016-03-11-at-11.11.05-AM.png' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { style: gilsonText },
+	            'Grand Prize winning Team Gilsons!',
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://github.com/mickberber' },
+	              _react2.default.createElement(
+	                'h5',
+	                null,
+	                'Myself  ',
+	                _react2.default.createElement('img', { src: './src/assets/github-32.png' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://github.com/seanagibson' },
+	              _react2.default.createElement(
+	                'h5',
+	                null,
+	                'Sean Gibson  ',
+	                _react2.default.createElement('img', { src: './src/assets/github-32.png' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://github.com/malekascha' },
+	              _react2.default.createElement(
+	                'h5',
+	                null,
+	                'Malek Ascha  ',
+	                _react2.default.createElement('img', { src: './src/assets/github-32.png' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://github.com/elliotschi' },
+	              _react2.default.createElement(
+	                'h5',
+	                null,
+	                'Elliot Chi  ',
+	                _react2.default.createElement('img', { src: './src/assets/github-32.png' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://github.com/bgoodfliesh' },
+	              _react2.default.createElement(
+	                'h5',
+	                null,
+	                'Brandon Goodfliesh  ',
+	                _react2.default.createElement('img', { src: './src/assets/github-32.png' })
+	              )
+	            )
+	          )
+	        )
+	      ),
+	      _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' })
+	    )
+	  );
+	};
+
+	exports.default = GilsonWall;
+
+/***/ },
+/* 469 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _videoPlayer = __webpack_require__(470);
+
+	var _videoPlayer2 = _interopRequireDefault(_videoPlayer);
+
+	var _classnames = __webpack_require__(252);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var ChutteWall = function (_Component) {
+	  _inherits(ChutteWall, _Component);
+
+	  function ChutteWall(props) {
+	    _classCallCheck(this, ChutteWall);
+
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ChutteWall).call(this, props));
+
+	    _this.props = props;
+	    return _this;
+	  }
+
+	  _createClass(ChutteWall, [{
+	    key: 'render',
+	    value: function render() {
+	      var classesWall = (0, _classnames2.default)(this.props.wall, this.props.background);
+	      return _react2.default.createElement(
+	        'div',
+	        { className: classesWall },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'row' },
+	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col-xs-12 col-md-8' },
+	            _react2.default.createElement(_videoPlayer2.default, null),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'center' },
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'http://www.chutte.com' },
+	                _react2.default.createElement(
+	                  'h3',
+	                  null,
+	                  'Chutte.com'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'h3',
+	                null,
+	                'A reverse auction style marketplace.'
+	              ),
+	              _react2.default.createElement('img', { style: { height: '50px', width: '50px' }, src: './../assets/wallAssets/kgbjs.png' }),
+	              _react2.default.createElement(
+	                'h4',
+	                null,
+	                'KGBJS'
+	              ),
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'https://github.com/mickberber' },
+	                _react2.default.createElement(
+	                  'h5',
+	                  null,
+	                  'Myself  ',
+	                  _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'https://github.com/seanagibson' },
+	                _react2.default.createElement(
+	                  'h5',
+	                  null,
+	                  'Sean Gibson  ',
+	                  _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'https://github.com/peterkaiserui' },
+	                _react2.default.createElement(
+	                  'h5',
+	                  null,
+	                  'Peter Kaiser  ',
+	                  _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'https://github.com/beresford211' },
+	                _react2.default.createElement(
+	                  'h5',
+	                  null,
+	                  'Tim Steele  ',
+	                  _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
+	                )
+	              )
+	            )
+	          ),
+	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' })
+	        )
+	      );
+	    }
+	  }]);
+
+	  return ChutteWall;
+	}(_react.Component);
+
+	exports.default = ChutteWall;
+
+/***/ },
+/* 470 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactYoutube = __webpack_require__(256);
+
+	var _reactYoutube2 = _interopRequireDefault(_reactYoutube);
+
+	var _classnames = __webpack_require__(252);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var VideoPlayer = function (_Component) {
+	  _inherits(VideoPlayer, _Component);
+
+	  function VideoPlayer() {
+	    _classCallCheck(this, VideoPlayer);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(VideoPlayer).apply(this, arguments));
+	  }
+
+	  _createClass(VideoPlayer, [{
+	    key: 'render',
+	    value: function render() {
+	      var videoSource = '7_P6H5tIYqs';
+	      var opts = {
+	        height: '390',
+	        width: '640',
+	        playerVars: { // https://developers.google.com/youtube/player_parameters
+	          autoplay: 0
+	        }
+	      };
+	      var classes = (0, _classnames2.default)('center-block');
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(_reactYoutube2.default, { className: classes, videoId: videoSource, opts: opts,
+	          onReady: this._onReady })
+	      );
+	    }
+	  }]);
+
+	  return VideoPlayer;
+	}(_react.Component);
+
+	exports.default = VideoPlayer;
+
+/***/ },
+/* 471 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _classnames = __webpack_require__(252);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var SocialWall = function (_Component) {
+	  _inherits(SocialWall, _Component);
+
+	  function SocialWall(props) {
+	    _classCallCheck(this, SocialWall);
+
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(SocialWall).call(this, props));
+
+	    _this.props = props;
+	    return _this;
+	  }
+
+	  _createClass(SocialWall, [{
+	    key: 'render',
+	    value: function render() {
+	      var classesWall = (0, _classnames2.default)(this.props.wall, this.props.background);
+	      return _react2.default.createElement(
+	        'div',
+	        { className: classesWall },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'row' },
+	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
+	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col-xs-12 col-md-8' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'right dropTopLrg', style: { color: 'white' } },
+	              _react2.default.createElement(
+	                'h3',
+	                null,
+	                _react2.default.createElement(
+	                  'a',
+	                  { href: 'http://socialflix.herokuapp.com' },
+	                  'Socialflix ',
+	                  _react2.default.createElement('i', { className: 'fa fa-film', 'aria-hidden': 'true' })
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'h4',
+	                null,
+	                'Via ',
+	                _react2.default.createElement('img', { style: { height: '50px', width: '100px' }, src: './src/assets//wallAssets/socketio.png' })
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'right' },
+	                'MiddleOutHomeBrewCrew',
+	                _react2.default.createElement(
+	                  'a',
+	                  { href: 'https://github.com/mickberber' },
+	                  _react2.default.createElement(
+	                    'h5',
+	                    null,
+	                    'Myself  ',
+	                    _react2.default.createElement('img', { src: './src/assets/github-32.png' })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'a',
+	                  { href: 'https://github.com/ycube' },
+	                  _react2.default.createElement(
+	                    'h5',
+	                    null,
+	                    'Yale Yuen  ',
+	                    _react2.default.createElement('img', { src: './src/assets/github-32.png' })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'a',
+	                  { href: 'https://github.com/abibbs' },
+	                  _react2.default.createElement(
+	                    'h5',
+	                    null,
+	                    'Anthony Bibbs  ',
+	                    _react2.default.createElement('img', { src: './src/assets/github-32.png' })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'a',
+	                  { href: 'https://github.com/spiterman' },
+	                  _react2.default.createElement(
+	                    'h5',
+	                    null,
+	                    'Sergey Piterman  ',
+	                    _react2.default.createElement('img', { src: './src/assets/github-32.png' })
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return SocialWall;
+	}(_react.Component);
+
+	exports.default = SocialWall;
+
+/***/ },
+/* 472 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _classnames = __webpack_require__(252);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var TinnrWall = function (_Component) {
+	  _inherits(TinnrWall, _Component);
+
+	  function TinnrWall(props) {
+	    _classCallCheck(this, TinnrWall);
+
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(TinnrWall).call(this, props));
+
+	    _this.props = props;
+	    return _this;
+	  }
+
+	  _createClass(TinnrWall, [{
+	    key: 'render',
+	    value: function render() {
+	      var classesWall = (0, _classnames2.default)(this.props.wall, this.props.background);
+	      return _react2.default.createElement(
+	        'div',
+	        { className: classesWall },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'row' },
+	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
+	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col-xs-12 col-md-8' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'right', style: { marginTop: '65px', color: 'grey' } },
+	              _react2.default.createElement(
+	                'h3',
+	                null,
+	                _react2.default.createElement(
+	                  'a',
+	                  { href: 'http://www.tinnrplusplus.herokuapp.com' },
+	                  'Tinnr ',
+	                  _react2.default.createElement('i', { className: 'fa fa-plus-circle', 'aria-hidden': 'true' })
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'h3',
+	                null,
+	                'A web application to help pick recipes'
+	              ),
+	              _react2.default.createElement(
+	                'h4',
+	                null,
+	                'With mobile swiping capability'
+	              ),
+	              _react2.default.createElement(
+	                'h4',
+	                null,
+	                'Via ',
+	                _react2.default.createElement('img', { style: { height: '50px', width: '100px' }, src: './src/assets/hammer.png' })
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'right' },
+	                'MiddleOutHomeBrewCrew',
+	                _react2.default.createElement(
+	                  'a',
+	                  { href: 'https://github.com/mickberber' },
+	                  _react2.default.createElement(
+	                    'h5',
+	                    null,
+	                    'Myself  ',
+	                    _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'a',
+	                  { href: 'https://github.com/ycube' },
+	                  _react2.default.createElement(
+	                    'h5',
+	                    null,
+	                    'Yale Yuen  ',
+	                    _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'a',
+	                  { href: 'https://github.com/abibbs' },
+	                  _react2.default.createElement(
+	                    'h5',
+	                    null,
+	                    'Anthony Bibbs  ',
+	                    _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'a',
+	                  { href: 'https://github.com/spiterman' },
+	                  _react2.default.createElement(
+	                    'h5',
+	                    null,
+	                    'Sergey Piterman  ',
+	                    _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return TinnrWall;
+	}(_react.Component);
+
+	exports.default = TinnrWall;
+
+/***/ },
+/* 473 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _classnames = __webpack_require__(252);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var McTestingWall = function (_Component) {
+	  _inherits(McTestingWall, _Component);
+
+	  function McTestingWall(props) {
+	    _classCallCheck(this, McTestingWall);
+
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(McTestingWall).call(this, props));
+
+	    _this.props = props;
+	    return _this;
+	  }
+
+	  _createClass(McTestingWall, [{
+	    key: 'render',
+	    value: function render() {
+	      var classesWall = (0, _classnames2.default)(this.props.wall, this.props.background);;
+	      return _react2.default.createElement(
+	        'div',
+	        { className: classesWall },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'row' },
+	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
+	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col-xs-12 col-md-8' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'right dropTopLrg' },
+	              _react2.default.createElement(
+	                'h3',
+	                null,
+	                _react2.default.createElement(
+	                  'a',
+	                  { href: 'https://www.github.com/mickberber/mcTesting' },
+	                  'McTesting.js ',
+	                  _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'h3',
+	                null,
+	                'npm install mc-testing'
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return McTestingWall;
+	}(_react.Component);
+
+	exports.default = McTestingWall;
+
+/***/ },
+/* 474 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _classnames = __webpack_require__(252);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var ReChatWall = function (_Component) {
+	  _inherits(ReChatWall, _Component);
+
+	  function ReChatWall(props) {
+	    _classCallCheck(this, ReChatWall);
+
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ReChatWall).call(this, props));
+
+	    _this.props = props;
+	    return _this;
+	  }
+
+	  _createClass(ReChatWall, [{
+	    key: 'render',
+	    value: function render() {
+	      var classesWall = (0, _classnames2.default)(this.props.wall, this.props.background);
+	      return _react2.default.createElement(
+	        'div',
+	        { className: classesWall },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'row' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col-xs-4 col-md-3 dropTopLrg' },
+	            _react2.default.createElement(
+	              'div',
+	              { style: { fontSize: '25px', marginLeft: '40px' } },
+	              'Tutorial written for React, Horizon and Webpack',
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'https://medium.com/front-end-hacking/react-webpack-and-horizon-quick-start-b9335c1ece53#.vawif2uba' },
+	                '\n',
+	                'Viewable Here'
+	              )
+	            ),
+	            _react2.default.createElement('img', { style: { width: '300px', height: '100px' }, src: './src/assets/horizon.png' })
+	          ),
+	          _react2.default.createElement('div', { className: 'col-xs-2 col-md-1' }),
+	          _react2.default.createElement('div', { className: 'col-xs-12 col-md-8' })
+	        )
+	      );
+	    }
+	  }]);
+
+	  return ReChatWall;
+	}(_react.Component);
+
+	exports.default = ReChatWall;
 
 /***/ }
 /******/ ]);
