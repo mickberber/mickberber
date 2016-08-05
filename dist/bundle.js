@@ -26961,8 +26961,6 @@
 	  value: true
 	});
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	var _react = __webpack_require__(2);
 
 	var _react2 = _interopRequireDefault(_react);
@@ -26971,164 +26969,142 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	var Nav = function Nav(_ref) {
+	  var textColor = _ref.textColor;
 
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Nav = function (_Component) {
-	  _inherits(Nav, _Component);
-
-	  function Nav(props) {
-	    _classCallCheck(this, Nav);
-
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Nav).call(this, props));
-
-	    _this.textColor = props.textColor;
-	    return _this;
-	  }
-
-	  _createClass(Nav, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'nav',
-	        { className: 'navbar navbar-inverse navbar-fixed-top' },
+	  return _react2.default.createElement(
+	    'nav',
+	    { className: 'navbar navbar-inverse navbar-fixed-top' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'container-fluid' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'navbar-collapse collapse', id: 'footer' },
 	        _react2.default.createElement(
-	          'div',
-	          { className: 'container-fluid' },
+	          'ul',
+	          { className: 'nav navbar-nav' },
 	          _react2.default.createElement(
-	            'div',
-	            { className: 'navbar-collapse collapse', id: 'footer' },
+	            'li',
+	            null,
 	            _react2.default.createElement(
-	              'ul',
-	              { className: 'nav navbar-nav' },
+	              'a',
+	              { href: '/' },
 	              _react2.default.createElement(
-	                'li',
-	                null,
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: '/' },
-	                  _react2.default.createElement(
-	                    'div',
-	                    { style: { color: this.textColor } },
-	                    _react2.default.createElement('i', { className: 'fa fa-home', 'aria-hidden': 'true' }),
-	                    ' home'
-	                  )
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'li',
-	                null,
-	                _react2.default.createElement(
-	                  _reactRouter.Link,
-	                  { to: 'contact' },
-	                  _react2.default.createElement(
-	                    'div',
-	                    { style: { color: this.textColor } },
-	                    _react2.default.createElement('i', { className: 'fa fa-envelope-o', 'aria-hidden': 'true' }),
-	                    ' contact'
-	                  )
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'li',
-	                null,
-	                _react2.default.createElement(
-	                  _reactRouter.Link,
-	                  { to: 'about' },
-	                  _react2.default.createElement(
-	                    'div',
-	                    { style: { color: this.textColor } },
-	                    _react2.default.createElement('i', { className: 'fa fa-camera-retro', 'aria-hidden': 'true' }),
-	                    ' gallery'
-	                  )
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'li',
-	                null,
-	                _react2.default.createElement(
-	                  _reactRouter.Link,
-	                  { to: 'projects' },
-	                  _react2.default.createElement(
-	                    'div',
-	                    { style: { color: this.textColor } },
-	                    _react2.default.createElement('i', { className: 'fa fa-code-fork', 'aria-hidden': 'true' }),
-	                    ' projects'
-	                  )
-	                )
+	                'div',
+	                { style: { color: textColor } },
+	                _react2.default.createElement('i', { className: 'fa fa-home', 'aria-hidden': 'true' }),
+	                ' home'
 	              )
-	            ),
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
 	            _react2.default.createElement(
-	              'ul',
-	              { className: 'nav navbar-nav navbar-right' },
+	              _reactRouter.Link,
+	              { to: 'contact' },
 	              _react2.default.createElement(
-	                'li',
-	                null,
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://linkedin.com/in/michaelberber' },
-	                  _react2.default.createElement(
-	                    'div',
-	                    { style: { color: this.textColor } },
-	                    _react2.default.createElement('i', { className: 'fa fa-linkedin', 'aria-hidden': 'true' }),
-	                    ' LinkedIn'
-	                  )
-	                )
-	              ),
+	                'div',
+	                { style: { color: textColor } },
+	                _react2.default.createElement('i', { className: 'fa fa-envelope-o', 'aria-hidden': 'true' }),
+	                ' contact'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: 'about' },
 	              _react2.default.createElement(
-	                'li',
-	                null,
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://github.com/mickberber' },
-	                  _react2.default.createElement(
-	                    'div',
-	                    { style: { color: this.textColor } },
-	                    _react2.default.createElement('i', { className: 'fa fa-github-alt', 'aria-hidden': 'true' }),
-	                    ' Github'
-	                  )
-	                )
-	              ),
+	                'div',
+	                { style: { color: textColor } },
+	                _react2.default.createElement('i', { className: 'fa fa-camera-retro', 'aria-hidden': 'true' }),
+	                ' gallery'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: 'projects' },
 	              _react2.default.createElement(
-	                'li',
-	                null,
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://medium.com/@steedhelix' },
-	                  _react2.default.createElement(
-	                    'div',
-	                    { style: { color: this.textColor } },
-	                    _react2.default.createElement('i', { className: 'fa fa-medium', 'aria-hidden': 'true' }),
-	                    ' Blog'
-	                  )
-	                )
-	              ),
+	                'div',
+	                { style: { color: textColor } },
+	                _react2.default.createElement('i', { className: 'fa fa-code-fork', 'aria-hidden': 'true' }),
+	                ' projects'
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'ul',
+	          { className: 'nav navbar-nav navbar-right' },
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://linkedin.com/in/michaelberber' },
 	              _react2.default.createElement(
-	                'li',
-	                null,
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://twitter.com/steedhelix' },
-	                  _react2.default.createElement(
-	                    'div',
-	                    { style: { color: this.textColor } },
-	                    _react2.default.createElement('i', { className: 'fa fa-twitter', 'aria-hidden': 'true' }),
-	                    ' Twitter'
-	                  )
-	                )
+	                'div',
+	                { style: { color: textColor } },
+	                _react2.default.createElement('i', { className: 'fa fa-linkedin', 'aria-hidden': 'true' }),
+	                ' LinkedIn'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://github.com/mickberber' },
+	              _react2.default.createElement(
+	                'div',
+	                { style: { color: textColor } },
+	                _react2.default.createElement('i', { className: 'fa fa-github-alt', 'aria-hidden': 'true' }),
+	                ' Github'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://medium.com/@steedhelix' },
+	              _react2.default.createElement(
+	                'div',
+	                { style: { color: textColor } },
+	                _react2.default.createElement('i', { className: 'fa fa-medium', 'aria-hidden': 'true' }),
+	                ' Blog'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://twitter.com/steedhelix' },
+	              _react2.default.createElement(
+	                'div',
+	                { style: { color: textColor } },
+	                _react2.default.createElement('i', { className: 'fa fa-twitter', 'aria-hidden': 'true' }),
+	                ' Twitter'
 	              )
 	            )
 	          )
 	        )
-	      );
-	    }
-	  }]);
-
-	  return Nav;
-	}(_react.Component);
+	      )
+	    )
+	  );
+	};
 
 	exports.default = Nav;
 
