@@ -9,7 +9,7 @@ export default class App extends Component {
     return (
       <div>
         <Nav textColor='black' />
-        <HomeWall background='homeBackground' wall='homeStructure' />
+        <HomeWall />
         <Twitters />
       </div>
     );

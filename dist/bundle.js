@@ -75,7 +75,7 @@
 
 	var _app2 = _interopRequireDefault(_app);
 
-	var _projects = __webpack_require__(251);
+	var _projects = __webpack_require__(250);
 
 	var _projects2 = _interopRequireDefault(_projects);
 
@@ -26860,11 +26860,11 @@
 
 	var _homeWall2 = _interopRequireDefault(_homeWall);
 
-	var _twitters = __webpack_require__(249);
+	var _twitters = __webpack_require__(248);
 
 	var _twitters2 = _interopRequireDefault(_twitters);
 
-	var _nav = __webpack_require__(250);
+	var _nav = __webpack_require__(249);
 
 	var _nav2 = _interopRequireDefault(_nav);
 
@@ -26892,7 +26892,7 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(_nav2.default, { textColor: 'black' }),
-	        _react2.default.createElement(_homeWall2.default, { background: 'homeBackground', wall: 'homeStructure' }),
+	        _react2.default.createElement(_homeWall2.default, null),
 	        _react2.default.createElement(_twitters2.default, null)
 	      );
 	    }
@@ -26913,117 +26913,43 @@
 	  value: true
 	});
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	var _react = __webpack_require__(2);
 
 	var _react2 = _interopRequireDefault(_react);
 
 	var _reactRouter = __webpack_require__(186);
 
-	var _classnames = __webpack_require__(248);
-
-	var _classnames2 = _interopRequireDefault(_classnames);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	var style = {
+	  position: 'relative',
+	  height: '720px',
+	  width: '100%',
+	  zIndex: '1',
+	  background: 'url("./../src/assets/mblogo.png")',
+	  backgroundAttachment: 'scroll',
+	  backgroundPosition: 'center',
+	  backgroundSize: 'cover'
+	};
 
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var HomeWall = function (_Component) {
-	  _inherits(HomeWall, _Component);
-
-	  function HomeWall(props) {
-	    _classCallCheck(this, HomeWall);
-
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(HomeWall).call(this, props));
-
-	    _this.props = props;
-	    return _this;
-	  }
-
-	  _createClass(HomeWall, [{
-	    key: 'render',
-	    value: function render() {
-	      var classesWall = (0, _classnames2.default)(this.props.wall, this.props.background, 'center');
-	      return _react2.default.createElement(
-	        'div',
-	        { className: classesWall },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'row row-eq-height' },
-	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
-	          _react2.default.createElement('div', { className: 'col-xs-12 col-md-8 center', style: { height: '620px' } }),
-	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' })
-	        )
-	      );
-	    }
-	  }]);
-
-	  return HomeWall;
-	}(_react.Component);
+	var HomeWall = function HomeWall() {
+	  return _react2.default.createElement(
+	    'div',
+	    { style: style },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'row row-eq-height' },
+	      _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
+	      _react2.default.createElement('div', { className: 'col-xs-12 col-md-8 center', style: { height: '620px' } }),
+	      _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' })
+	    )
+	  );
+	};
 
 	exports.default = HomeWall;
 
 /***/ },
 /* 248 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
-	  Copyright (c) 2016 Jed Watson.
-	  Licensed under the MIT License (MIT), see
-	  http://jedwatson.github.io/classnames
-	*/
-	/* global define */
-
-	(function () {
-		'use strict';
-
-		var hasOwn = {}.hasOwnProperty;
-
-		function classNames () {
-			var classes = [];
-
-			for (var i = 0; i < arguments.length; i++) {
-				var arg = arguments[i];
-				if (!arg) continue;
-
-				var argType = typeof arg;
-
-				if (argType === 'string' || argType === 'number') {
-					classes.push(arg);
-				} else if (Array.isArray(arg)) {
-					classes.push(classNames.apply(null, arg));
-				} else if (argType === 'object') {
-					for (var key in arg) {
-						if (hasOwn.call(arg, key) && arg[key]) {
-							classes.push(key);
-						}
-					}
-				}
-			}
-
-			return classes.join(' ');
-		}
-
-		if (typeof module !== 'undefined' && module.exports) {
-			module.exports = classNames;
-		} else if (true) {
-			// register as 'classnames', consistent with npm package name
-			!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
-				return classNames;
-			}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-		} else {
-			window.classNames = classNames;
-		}
-	}());
-
-
-/***/ },
-/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27032,47 +26958,24 @@
 	  value: true
 	});
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	var _react = __webpack_require__(2);
 
 	var _react2 = _interopRequireDefault(_react);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Twitters = function (_Component) {
-	  _inherits(Twitters, _Component);
-
-	  function Twitters() {
-	    _classCallCheck(this, Twitters);
-
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Twitters).apply(this, arguments));
-	  }
-
-	  _createClass(Twitters, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        { className: 'centerTwit' },
-	        _react2.default.createElement('a', { href: 'https://twitter.com/steedhelix', className: 'twitter-timeline', 'data-show-count': 'false', 'data-show-screen-name': 'true' })
-	      );
-	    }
-	  }]);
-
-	  return Twitters;
-	}(_react.Component);
+	var Twitters = function Twitters() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'centerTwit' },
+	    _react2.default.createElement('a', { href: 'https://twitter.com/steedhelix', className: 'twitter-timeline', 'data-show-count': 'false', 'data-show-screen-name': 'true' })
+	  );
+	};
 
 	exports.default = Twitters;
 
 /***/ },
-/* 250 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27253,7 +27156,7 @@
 	exports.default = Nav;
 
 /***/ },
-/* 251 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27268,7 +27171,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _wall = __webpack_require__(252);
+	var _wall = __webpack_require__(251);
 
 	var _wall2 = _interopRequireDefault(_wall);
 
@@ -27296,7 +27199,7 @@
 
 	var _reChatWall2 = _interopRequireDefault(_reChatWall);
 
-	var _nav = __webpack_require__(250);
+	var _nav = __webpack_require__(249);
 
 	var _nav2 = _interopRequireDefault(_nav);
 
@@ -27341,7 +27244,7 @@
 	exports.default = Projects;
 
 /***/ },
-/* 252 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27356,7 +27259,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(248);
+	var _classnames = __webpack_require__(252);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -27415,6 +27318,60 @@
 	exports.default = LogoWall;
 
 /***/ },
+/* 252 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+	  Copyright (c) 2016 Jed Watson.
+	  Licensed under the MIT License (MIT), see
+	  http://jedwatson.github.io/classnames
+	*/
+	/* global define */
+
+	(function () {
+		'use strict';
+
+		var hasOwn = {}.hasOwnProperty;
+
+		function classNames () {
+			var classes = [];
+
+			for (var i = 0; i < arguments.length; i++) {
+				var arg = arguments[i];
+				if (!arg) continue;
+
+				var argType = typeof arg;
+
+				if (argType === 'string' || argType === 'number') {
+					classes.push(arg);
+				} else if (Array.isArray(arg)) {
+					classes.push(classNames.apply(null, arg));
+				} else if (argType === 'object') {
+					for (var key in arg) {
+						if (hasOwn.call(arg, key) && arg[key]) {
+							classes.push(key);
+						}
+					}
+				}
+			}
+
+			return classes.join(' ');
+		}
+
+		if (typeof module !== 'undefined' && module.exports) {
+			module.exports = classNames;
+		} else if (true) {
+			// register as 'classnames', consistent with npm package name
+			!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
+				return classNames;
+			}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+		} else {
+			window.classNames = classNames;
+		}
+	}());
+
+
+/***/ },
 /* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -27430,7 +27387,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(248);
+	var _classnames = __webpack_require__(252);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -27574,7 +27531,7 @@
 
 	var _videoPlayer2 = _interopRequireDefault(_videoPlayer);
 
-	var _classnames = __webpack_require__(248);
+	var _classnames = __webpack_require__(252);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -27709,7 +27666,7 @@
 
 	var _reactYoutube2 = _interopRequireDefault(_reactYoutube);
 
-	var _classnames = __webpack_require__(248);
+	var _classnames = __webpack_require__(252);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -40557,7 +40514,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(248);
+	var _classnames = __webpack_require__(252);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -40688,7 +40645,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(248);
+	var _classnames = __webpack_require__(252);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -40829,7 +40786,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(248);
+	var _classnames = __webpack_require__(252);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -40914,7 +40871,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(248);
+	var _classnames = __webpack_require__(252);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -40994,7 +40951,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _nav = __webpack_require__(250);
+	var _nav = __webpack_require__(249);
 
 	var _nav2 = _interopRequireDefault(_nav);
 
@@ -41118,7 +41075,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _nav = __webpack_require__(250);
+	var _nav = __webpack_require__(249);
 
 	var _nav2 = _interopRequireDefault(_nav);
 

@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import CN from 'classnames';
 
-class HomeWall extends Component {
-  constructor(props) {
-    super(props);
-    this.props = props;
-  }
-  render() {
-    const classesWall = CN(this.props.wall, this.props.background, 'center');
+let style = {
+  position: 'relative',
+	height: '720px',
+	width: '100%',
+	zIndex: '1',
+  background: 'url("./../src/assets/mblogo.png")',
+	backgroundAttachment: 'scroll',
+	backgroundPosition: 'center',
+  backgroundSize: 'cover'
+}
+
+const HomeWall = () =>  {
     return (
-      <div className={classesWall}>
+      <div style={style}>
           <div className='row row-eq-height'>
             <div className='col-xs-3 col-md-2' />
               <div className='col-xs-12 col-md-8 center' style={{height: '620px'}}>
@@ -18,8 +22,7 @@ class HomeWall extends Component {
             <div className='col-xs-3 col-md-2' />
           </div>
       </div>
-    );
-  }
+    )
 }
 
 export default HomeWall;
