@@ -1,20 +1,31 @@
 import React, { Component } from 'react';
-import CN from 'classnames';
 
-class McTestingWall extends Component {
-  constructor(props) {
-    super(props);
-    this.props = props;
-  }
-  render() {
-    const classesWall = CN(this.props.wall, this.props.background);;
+/* McTesting.js Wall Attributes */
+
+const mcTestingStructure = {
+  position: 'relative',
+	height: '800px',
+	width: '100%',
+	zIndex: '1',
+	background: 'url("./../src/assets/npmmcTesting.png")',
+	backgroundAttachment: 'scroll',
+	backgroundPosition: 'center',
+  backgroundSize: 'cover'
+}
+
+const dropRight = {
+  marginTop: '50px',
+  textAlign: 'right'
+}
+
+const McTestingWall = () => {
     return (
-      <div className={classesWall}>
+      <div style={mcTestingStructure}>
           <div className='row'>
             <div className='col-xs-3 col-md-2' />
             <div className='col-xs-3 col-md-2' />
             <div className='col-xs-12 col-md-8'>
-                <div className='right dropTopLrg'>
+                <div style={dropRight}>
                   <h3>
                     <a href='https://www.github.com/mickberber/mcTesting'>
                       McTesting.js <img src='./src/assets/GitHub-Mark-32px.png'></img>
@@ -25,8 +36,7 @@ class McTestingWall extends Component {
             </div>
           </div>
       </div>
-    )
-  }
+    );
 }
 
 export default McTestingWall;

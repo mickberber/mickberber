@@ -16,7 +16,7 @@ class Projects extends Component {
         <GilsonWall />
         <ReChatWall background='reChatBackground' wall='reChatStructure'/>
         <TinnrWall background='tinnrBackground' wall='tinnrStructure' />
-        <McTestingWall background='mcTestingBackground' wall='mcTestingStructure' />
+        <McTestingWall />
         <ChutteWall />
         <SocialWall background='socialBackground' wall='socialStructure' />
         <LogoWall />
