@@ -27,9 +27,6 @@
 	margin-top: 300px;
 }
 
-
-
-
 /* create space for text from top of walls */
 
 .dropTopLrg {
@@ -38,22 +35,6 @@
 
 .dropTopSm {
 	margin-top: 25px;
-}
-
-
-/* Logo Wall Attributes */
-.logoStructure {
-  position: relative;
-	height: 720px;
-	width: 100%;
-	z-index: 1;
-}
-
-.logoBackground {
-	background: url('./../src/assets/mblogo.png');
-	background-attachment: scroll;
-	background-position: center;
-  background-size: cover;
 }
 
 

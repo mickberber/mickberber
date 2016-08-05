@@ -40239,67 +40239,54 @@
 	  value: true
 	});
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	var _react = __webpack_require__(2);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(252);
-
-	var _classnames2 = _interopRequireDefault(_classnames);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	/* Logo Wall Attributes */
+	var logoStructure = {
+	  position: 'relative',
+	  height: '720px',
+	  width: '100%',
+	  zIndex: '1',
+	  background: 'url("./../src/assets/mblogo.png")',
+	  backgroundAttachment: 'scroll',
+	  backgroundPosition: 'center',
+	  backgroundSize: 'cover'
+	};
 
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	var bottom = {
+	  position: 'absolute',
+	  bottom: '0px',
+	  width: '100%'
+	};
 
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var LogoWall = function (_Component) {
-	  _inherits(LogoWall, _Component);
-
-	  function LogoWall(props) {
-	    _classCallCheck(this, LogoWall);
-
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(LogoWall).call(this, props));
-
-	    _this.props = props;
-	    return _this;
-	  }
-
-	  _createClass(LogoWall, [{
-	    key: 'render',
-	    value: function render() {
-	      var classesWall = (0, _classnames2.default)(this.props.wall, this.props.background, 'center');
-	      return _react2.default.createElement(
+	var LogoWall = function LogoWall() {
+	  return _react2.default.createElement(
+	    'div',
+	    { style: logoStructure },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'row row-eq-height' },
+	      _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
+	      _react2.default.createElement(
 	        'div',
-	        { className: classesWall },
+	        { className: 'col-xs-12 col-md-8', style: { height: '620px', textAlign: 'center' } },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'row row-eq-height' },
-	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'col-xs-12 col-md-8 center', style: { height: '620px' } },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'bottom' },
-	              'This site was built with:',
-	              _react2.default.createElement('img', { style: { height: '100px', width: '70px' }, src: './../assets/wallAssets/reactjs.png' }),
-	              'And deployed on:',
-	              _react2.default.createElement('img', { style: { height: '100px', width: '120px' }, src: './../assets/wallAssets/heroku.png' })
-	            )
-	          ),
-	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' })
+	          { style: bottom },
+	          'This site was built with:',
+	          _react2.default.createElement('img', { style: { height: '100px', width: '70px' }, src: './../assets/wallAssets/reactjs.png' }),
+	          'And deployed on:',
+	          _react2.default.createElement('img', { style: { height: '100px', width: '120px' }, src: './../assets/wallAssets/heroku.png' })
 	        )
-	      );
-	    }
-	  }]);
-
-	  return LogoWall;
-	}(_react.Component);
+	      ),
+	      _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' })
+	    )
+	  );
+	};
 
 	exports.default = LogoWall;
 
