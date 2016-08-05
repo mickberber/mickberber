@@ -14,7 +14,7 @@ const Projects = () => {
         <Nav />
         <GilsonWall />
         <ReChatWall />
-        <TinnrWall background='tinnrBackground' wall='tinnrStructure' />
+        <TinnrWall />
         <McTestingWall />
         <ChutteWall />
         <SocialWall />

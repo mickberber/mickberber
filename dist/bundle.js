@@ -27176,7 +27176,7 @@
 	    _react2.default.createElement(_nav2.default, null),
 	    _react2.default.createElement(_gilsonWall2.default, null),
 	    _react2.default.createElement(_reChatWall2.default, null),
-	    _react2.default.createElement(_tinnrWall2.default, { background: 'tinnrBackground', wall: 'tinnrStructure' }),
+	    _react2.default.createElement(_tinnrWall2.default, null),
 	    _react2.default.createElement(_mcTestingWall2.default, null),
 	    _react2.default.createElement(_chutteWall2.default, null),
 	    _react2.default.createElement(_socialWall2.default, null),
@@ -40522,8 +40522,6 @@
 	  value: true
 	});
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	var _react = __webpack_require__(2);
 
 	var _react2 = _interopRequireDefault(_react);
@@ -40534,138 +40532,110 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	/* Tinnr++ Wall Attributes */
 
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	var tinnrStructure = {
+	  position: 'relative',
+	  height: '800px',
+	  width: '100%',
+	  zIndex: '1',
+	  background: 'url("./../src/assets/wallAssets/tinnrss.png")',
+	  backgroundAttachment: 'scroll',
+	  backgroundPosition: 'center',
+	  backgroundSize: 'cover'
+	};
 
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	// /* Tinnr++ Wall Attributes */
-	//
-	// .tinnrStructure {
-	//   position: relative;
-	// 	height: 800px;
-	// 	width: 100%;
-	// 	z-index: 1;
-	// }
-	//
-	// .tinnrBackground {
-	// 	background: url('./../src/assets/wallAssets/tinnrss.png');
-	// 	background-attachment: scroll;
-	// 	background-position: center;
-	//   background-size: cover;
-	// }
-
-	var TinnrWall = function (_Component) {
-	  _inherits(TinnrWall, _Component);
-
-	  function TinnrWall(props) {
-	    _classCallCheck(this, TinnrWall);
-
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(TinnrWall).call(this, props));
-
-	    _this.props = props;
-	    return _this;
-	  }
-
-	  _createClass(TinnrWall, [{
-	    key: 'render',
-	    value: function render() {
-	      var classesWall = (0, _classnames2.default)(this.props.wall, this.props.background);
-	      return _react2.default.createElement(
+	var TinnrWall = function TinnrWall() {
+	  return _react2.default.createElement(
+	    'div',
+	    { style: tinnrStructure },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'row' },
+	      _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
+	      _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
+	      _react2.default.createElement(
 	        'div',
-	        { className: classesWall },
+	        { className: 'col-xs-12 col-md-8' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'row' },
-	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
-	          _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
+	          { className: 'right', style: { marginTop: '65px', color: 'grey' } },
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'http://www.tinnrplusplus.herokuapp.com' },
+	              'Tinnr ',
+	              _react2.default.createElement('i', { className: 'fa fa-plus-circle', 'aria-hidden': 'true' })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            'A web application to help pick recipes'
+	          ),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            'With mobile swiping capability'
+	          ),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            'Via ',
+	            _react2.default.createElement('img', { style: { height: '50px', width: '100px' }, src: './src/assets/hammer.png' })
+	          ),
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'col-xs-12 col-md-8' },
+	            { className: 'right' },
+	            'MiddleOutHomeBrewCrew',
 	            _react2.default.createElement(
-	              'div',
-	              { className: 'right', style: { marginTop: '65px', color: 'grey' } },
+	              'a',
+	              { href: 'https://github.com/mickberber' },
 	              _react2.default.createElement(
-	                'h3',
+	                'h5',
 	                null,
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'http://www.tinnrplusplus.herokuapp.com' },
-	                  'Tinnr ',
-	                  _react2.default.createElement('i', { className: 'fa fa-plus-circle', 'aria-hidden': 'true' })
-	                )
-	              ),
+	                'Myself  ',
+	                _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://github.com/ycube' },
 	              _react2.default.createElement(
-	                'h3',
+	                'h5',
 	                null,
-	                'A web application to help pick recipes'
-	              ),
+	                'Yale Yuen  ',
+	                _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://github.com/abibbs' },
 	              _react2.default.createElement(
-	                'h4',
+	                'h5',
 	                null,
-	                'With mobile swiping capability'
-	              ),
+	                'Anthony Bibbs  ',
+	                _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://github.com/spiterman' },
 	              _react2.default.createElement(
-	                'h4',
+	                'h5',
 	                null,
-	                'Via ',
-	                _react2.default.createElement('img', { style: { height: '50px', width: '100px' }, src: './src/assets/hammer.png' })
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'right' },
-	                'MiddleOutHomeBrewCrew',
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://github.com/mickberber' },
-	                  _react2.default.createElement(
-	                    'h5',
-	                    null,
-	                    'Myself  ',
-	                    _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://github.com/ycube' },
-	                  _react2.default.createElement(
-	                    'h5',
-	                    null,
-	                    'Yale Yuen  ',
-	                    _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://github.com/abibbs' },
-	                  _react2.default.createElement(
-	                    'h5',
-	                    null,
-	                    'Anthony Bibbs  ',
-	                    _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://github.com/spiterman' },
-	                  _react2.default.createElement(
-	                    'h5',
-	                    null,
-	                    'Sergey Piterman  ',
-	                    _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
-	                  )
-	                )
+	                'Sergey Piterman  ',
+	                _react2.default.createElement('img', { src: './src/assets/GitHub-Mark-32px.png' })
 	              )
 	            )
 	          )
 	        )
-	      );
-	    }
-	  }]);
-
-	  return TinnrWall;
-	}(_react.Component);
+	      )
+	    )
+	  );
+	};
 
 	exports.default = TinnrWall;
 

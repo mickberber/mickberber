@@ -1,31 +1,22 @@
 import React, { Component } from 'react';
 import CN from 'classnames';
 
-// /* Tinnr++ Wall Attributes */
-//
-// .tinnrStructure {
-//   position: relative;
-// 	height: 800px;
-// 	width: 100%;
-// 	z-index: 1;
-// }
-//
-// .tinnrBackground {
-// 	background: url('./../src/assets/wallAssets/tinnrss.png');
-// 	background-attachment: scroll;
-// 	background-position: center;
-//   background-size: cover;
-// }
+/* Tinnr++ Wall Attributes */
 
-class TinnrWall extends Component {
-  constructor(props) {
-    super(props);
-    this.props = props;
-  }
-  render() {
-    const classesWall = CN(this.props.wall, this.props.background);
+const tinnrStructure = {
+  position: 'relative',
+	height: '800px',
+	width: '100%',
+	zIndex: '1',
+	background: 'url("./../src/assets/wallAssets/tinnrss.png")',
+	backgroundAttachment: 'scroll',
+	backgroundPosition: 'center',
+  backgroundSize: 'cover'
+}
+
+const TinnrWall = () => {
     return (
-      <div className={classesWall}>
+      <div style={tinnrStructure}>
           <div className='row'>
             <div className='col-xs-3 col-md-2' />
             <div className='col-xs-3 col-md-2' />
@@ -50,7 +41,6 @@ class TinnrWall extends Component {
           </div>
       </div>
     )
-  }
 }
 
 export default TinnrWall;

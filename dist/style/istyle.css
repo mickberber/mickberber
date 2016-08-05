@@ -36,19 +36,3 @@
 .dropTopSm {
 	margin-top: 25px;
 }
-
-/* Tinnr++ Wall Attributes */
-
-.tinnrStructure {
-  position: relative;
-	height: 800px;
-	width: 100%;
-	z-index: 1;
-}
-
-.tinnrBackground {
-	background: url('./../src/assets/wallAssets/tinnrss.png');
-	background-attachment: scroll;
-	background-position: center;
-  background-size: cover;
-}
