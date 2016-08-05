@@ -8,9 +8,8 @@ import McTestingWall from './mcTestingWall';
 import ReChatWall from './reChatWall';
 import Nav from './../nav';
 
-class Projects extends Component {
-  render() {
-    return(
+const Projects = () => {
+    return (
       <div>
         <Nav />
         <GilsonWall />
@@ -22,7 +21,6 @@ class Projects extends Component {
         <LogoWall />
       </div>
     )
-  }
 }
 
 export default Projects;
