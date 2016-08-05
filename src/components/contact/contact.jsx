@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-//import NavBar from './../navBar';
 import Nav from './../nav';
 
-export default class Contact extends Component {
-  render() {
+const Contact = () => {
     return (
       <div>
           <div className='container-fluid'>
@@ -22,5 +20,6 @@ export default class Contact extends Component {
         <Nav textColor='black' />
       </div>
     );
-  }
 }
+
+export default Contact;
