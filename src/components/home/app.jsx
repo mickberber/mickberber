@@ -4,8 +4,7 @@ import HomeWall from './homeWall';
 import Twitters from './twitters';
 import Nav from './../nav';
 
-export default class App extends Component {
-  render() {
+const App = () => {
     return (
       <div>
         <Nav textColor='black' />
@@ -13,5 +12,6 @@ export default class App extends Component {
         <Twitters />
       </div>
     );
-  }
 }
+
+export default App;

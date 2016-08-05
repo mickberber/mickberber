@@ -49,20 +49,7 @@
 .dropTopSm {
 	margin-top: 25px;
 }
-/* /app/homeWall styles */
-.homeStructure {
-  position: relative;
-	height: 720px;
-	width: 100%;
-	z-index: 1;
-}
 
-.homeBackground {
-	background: url('./../src/assets/mblogo.png');
-	background-attachment: scroll;
-	background-position: center;
-  background-size: cover;
-}
 
 /* Logo Wall Attributes */
 .logoStructure {
