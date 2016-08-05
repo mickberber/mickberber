@@ -1,15 +1,21 @@
 import React, { Component } from 'react';
-import CN from 'classnames';
 
-export default class ReChatWall extends Component {
-  constructor(props) {
-    super(props);
-    this.props = props;
-  }
-  render() {
-    const classesWall = CN(this.props.wall, this.props.background);
+/* ReChat Wall Attributes */
+
+const reChatStructure = {
+  position: 'relative',
+	height: '800px',
+	width: '100%',
+	zIndex: '1',
+	background: 'url("./../src/assets/wallAssets/rechat.png")',
+	backgroundAttachment: 'scroll',
+	backgroundPosition: 'center',
+  backgroundSize: 'cover'
+}
+
+const ReChatWall = () => {
     return (
-      <div className={classesWall}>
+      <div style={reChatStructure}>
           <div className='row'>
             <div className='col-xs-4 col-md-3 dropTopLrg'>
                 <div style={{fontSize: '25px', marginLeft: '40px'}}>
@@ -23,6 +29,7 @@ export default class ReChatWall extends Component {
             </div>
           </div>
       </div>
-    )
-  }
+    );
 }
+
+export default ReChatWall;
