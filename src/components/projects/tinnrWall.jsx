@@ -21,7 +21,7 @@ const TinnrWall = () => {
             <div className='col-xs-3 col-md-2' />
             <div className='col-xs-3 col-md-2' />
             <div className='col-xs-12 col-md-8'>
-              <div className='right' style={{marginTop: '65px', color: 'grey'}}>
+              <div style={{marginTop: '65px', color: 'grey', textAlign: 'right'}}>
                 <h3>
                   <a href='http://www.tinnrplusplus.herokuapp.com'>
                     Tinnr <i className="fa fa-plus-circle" aria-hidden="true"></i>
@@ -30,7 +30,7 @@ const TinnrWall = () => {
                 <h3>A web application to help pick recipes</h3>
                 <h4>With mobile swiping capability</h4>
                 <h4>Via <img style={{height:'50px', width:'100px'}} src='./src/assets/hammer.png'></img></h4>
-                <div className='right'>MiddleOutHomeBrewCrew
+                <div style={{textAlign: 'right'}}>MiddleOutHomeBrewCrew
                   <a href='https://github.com/mickberber'><h5>Myself  <img src='./src/assets/GitHub-Mark-32px.png'></img></h5></a>
                   <a href='https://github.com/ycube'><h5>Yale Yuen  <img src='./src/assets/GitHub-Mark-32px.png'></img></h5></a>
                   <a href='https://github.com/abibbs'><h5>Anthony Bibbs  <img src='./src/assets/GitHub-Mark-32px.png'></img></h5></a>

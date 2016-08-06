@@ -40559,7 +40559,7 @@
 	        { className: 'col-xs-12 col-md-8' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'right', style: { marginTop: '65px', color: 'grey' } },
+	          { style: { marginTop: '65px', color: 'grey', textAlign: 'right' } },
 	          _react2.default.createElement(
 	            'h3',
 	            null,
@@ -40588,7 +40588,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'right' },
+	            { style: { textAlign: 'right' } },
 	            'MiddleOutHomeBrewCrew',
 	            _react2.default.createElement(
 	              'a',
