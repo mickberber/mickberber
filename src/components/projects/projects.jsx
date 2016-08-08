@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import LogoWall from './wall';
 import GilsonWall from './gilsonWall';
+import LifelineWall from './lifelineWall';
 import ChutteWall from './chutteWall';
 import SocialWall from './socialWall';
 import TinnrWall from './tinnrWall';
@@ -13,6 +14,7 @@ const Projects = () => {
       <div>
         <Nav />
         <GilsonWall />
+        <LifelineWall />
         <ReChatWall />
         <TinnrWall />
         <McTestingWall />
