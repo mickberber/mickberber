@@ -27423,8 +27423,7 @@
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'col-xs-12 col-md-8', style: lifelineText },
-	        _react2.default.createElement('img', { style: picDefault, src: './../assets/wallAssets/attshape.png' }),
-	        'slkdfjlkas'
+	        _react2.default.createElement('img', { style: picDefault, src: './../assets/wallAssets/attshape.png' })
 	      ),
 	      _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' }),
 	      _react2.default.createElement('div', { className: 'col-xs-3 col-md-2' })
