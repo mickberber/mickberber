@@ -27,7 +27,6 @@ const LifelineWall = () => {
           <div className='row'>
             <div className='col-xs-12 col-md-8' style={lifelineText}>
               <img style={picDefault} src='./../assets/wallAssets/attshape.png' />
-              slkdfjlkas
             </div>
             <div className='col-xs-3 col-md-2' />
             <div className='col-xs-3 col-md-2' />
